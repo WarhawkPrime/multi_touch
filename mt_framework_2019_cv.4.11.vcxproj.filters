@@ -42,5 +42,13 @@
     <ClCompile Include="..\TUIO\TuioTime.cpp">
       <Filter>Source Files\TUIO</Filter>
     </ClCompile>
+    <ClCompile Include="Additions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Additions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

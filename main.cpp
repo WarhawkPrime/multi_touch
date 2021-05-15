@@ -7,6 +7,11 @@
 #include "opencv2/opencv.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/video.hpp"
+#include "opencv2/highgui.hpp"
+
+#include <map>
+#include <unordered_map>
+#include "Additions.h"
 
 //#include "opencv.hpp"
 
@@ -14,10 +19,6 @@
 #include <time.h>
 #include <math.h>
 #include <vector>
-
-
-
-
 
 
 
@@ -46,7 +47,8 @@ int main(void)
 
 	cv::Mat background;
 
-
+	//creation of a helper object
+	Helper helper;
 
 	for(;;)
 	{
@@ -67,65 +69,96 @@ int main(void)
 		//--------------------------
 		// your code goes here
 		//--------------------------
-		
+	
 		//take background
 		if(currentFrame == 0)
 		{
 			background = original;
 			cvtColor(background, grey, cv::COLOR_BGR2GRAY);
 		}
-		
+
+		cv::Mat endresult;
+
 		// background subtraction
 		cv::Mat back_sub_res;
 		cv::absdiff(background, original, back_sub_res);	// input, input, output.
-	
+
 		// simple highpass filter
 		cv::Mat blur_res;
-		cv::Size size(videoWidth, videoHeight);
-		cv::Point point(-1, -1);
-		cv::blur(back_sub_res, blur_res, size, point);	//input, output, size, point
+		cv::blur(back_sub_res, blur_res, cv::Size(videoWidth, videoHeight), cv::Point(-1, -1));
+		cv::Mat highpass;
+		cv::absdiff(back_sub_res, blur_res, highpass);
+		
+		// threshold
+		cv::Mat thresh_res = highpass;
 
-		cv::Mat highpass_res;
-		cv::absdiff(back_sub_res, blur_res, highpass_res);
+		cv::cvtColor(thresh_res, thresh_res, cv::COLOR_BGR2GRAY);
+		cv::threshold(thresh_res, thresh_res, 42, 255, cv::THRESH_TRUNC);
+		cv::adaptiveThreshold(thresh_res, thresh_res, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY, 13, -4); //src, dst, maxV, adaptMeth, type, threshsize, C 
+		cv::threshold(thresh_res, thresh_res, 35, 255, cv::THRESH_BINARY);
 
-		//cv::Mat blur_2_res;
-		//cv::blur(highpass_res, blur_2_res, size, point);	//input, output, size, point
-
-		//contrast
-		cv::Mat contrast;
-		highpass_res.convertTo(contrast, -1, 2, 0);
+		endresult = thresh_res;
 
 		
-		//thresholding
-		cv::Mat thresh_res;
+		cv::Mat input = thresh_res;
+		//--------------------------
+		//	find contours
+		//--------------------------
 		
-		//cvtColor(thresh_res, grey, cv::COLOR_BGR2GRAY);
-		thresh_res.convertTo(thresh_res, CV_8UC1);
 
-		if(thresh_res.type() == CV_8UC1) {
-			std::cout << "ist cv_8uc1" << std::endl;
-		
-			if(thresh_res.type() == CV_16UC1)
+		std::vector<std::vector<cv::Point>> contours;
+		std::vector<cv::Vec4i> hierarchy;
+
+		cv::findContours(input, contours, hierarchy, cv::RETR_CCOMP, cv::CHAIN_APPROX_SIMPLE, cv::Point(-1, -1));
+
+
+
+		//iterate through all the top-level contours -> "hierarchy" may not be empty
+		if(!hierarchy.empty() )
+		{
+
+
+			/*
+			create RotatedRect
+			calc id from last_frame
+				if empty -> get id dependent from size (or for loop?)
+			insert rec with new id to current_frame
+			draw ellipses from current_frame
+			overwrite last_frame with current_frame
+	
+			*/
+
+
+			for(int idx = 0; idx >= 0; idx = hierarchy[idx][0])
 			{
-				std::cout << "cv_16uc1" << std::endl;
+				//check contour size (number of points) and area ("blob" size)
+				if( cv::contourArea( cv::Mat(contours.at(idx))) > 4 && contours.at(idx).size() > 1)
+				{
+
+					cv::RotatedRect rec = cv::fitEllipse(cv::Mat(contours.at(idx)));
+					int calc_id = helper.calc_id(rec);
+					//std::cout << "test id: " << calc_id << std::endl;
+					
+					
+					cv::ellipse(original, rec, cv::Scalar(0,0,255), 1, 8);
+					cv::drawContours(original, contours, idx, cv::Scalar(255,0,0),1,8, hierarchy);
+
+
+					std::string IDs = std::to_string(idx);
+					cv::putText(endresult,"... " + std::to_string(calc_id), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+
+				}
 			}
-		//cv::threshold(back_sub_res, thresh_res, 40, 255, cv::THRESH_BINARY); // src, dest,thresh, max, type
-		//cv::adaptiveThreshold(back_sub_res, thresh_res, 255,cv::ADAPTIVE_THRESH_GAUSSIAN_C ,cv::THRESH_BINARY, 13, 1); //src, dst, maxV, adaptMeth, type, threshsize, C
-			cv::adaptiveThreshold(back_sub_res, back_sub_res, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY, 13, 2); //src, dst, maxV, adaptMeth, type, threshsize, C
 		}
-
-		// segmentation (binarization)
-		//cv::Mat thres_res;
-		//cv::threshold(highpass_res, thres_res, 90, 255, cv::THRESH_BINARY);	//input, output, thresh, maxval, type
+		helper.overwright();
 
 
 		//--------------------------
-		//
+		//	end
 		//--------------------------
 
-
-
-		
 
 		if(cv::waitKey(1) == 27) // wait for user input
 		{
@@ -139,18 +172,16 @@ int main(void)
 		ms_end = clock();
 		ms_time = ms_end - ms_start;
 
-		putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
-		putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
-
+		
 		//imshow("window", original); // render the frame to a window
 		cv::imshow("window", original); // render the frame to a window
+		
+		cv::imshow("background sub", back_sub_res);	
+		cv::imshow("endresult", endresult);
 
-		cv::imshow("background sub", back_sub_res);
-		//cv::imshow("blur", blur_res);
-		cv::imshow("highpass", highpass_res);
-		//cv::imshow("2nd blur", blur_2_res);
-		cv::imshow("thresh", thresh_res);
-		cv::imshow("contrast", contrast);
+		//putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
+		//putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
+
 
 	}
 
