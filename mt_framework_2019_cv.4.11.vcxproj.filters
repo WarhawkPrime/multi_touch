@@ -50,5 +50,8 @@
     <ClInclude Include="Additions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\TUIO\TuioServer.h">
+      <Filter>Source Files\TUIO</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -9,6 +9,8 @@
 #include "opencv2/video.hpp"
 #include "opencv2/highgui.hpp"
 
+
+
 #include <map>
 #include <unordered_map>
 #include "Additions.h"
@@ -16,6 +18,7 @@
 
 #include "TuioTime.h"
 #include "TuioCursor.h"
+#include "TuioServer.h"
 
 //#include "opencv.hpp"
 
@@ -23,8 +26,6 @@
 #include <time.h>
 #include <math.h>
 #include <vector>
-#include <TuioServer.cpp>
-
 
 
 int main(void)
@@ -61,8 +62,10 @@ int main(void)
 	cv::Mat background;
 
 	
+	
+
 	//========== TUIO Server ==========
-	auto *server = new TuioServer();
+	TUIO::TuioServer *server = new TUIO::TuioServer();
 	
 	
 	
