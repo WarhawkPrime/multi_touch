@@ -13,17 +13,26 @@
 #include <unordered_map>
 #include "Additions.h"
 
+
+#include "TuioTime.h"
+#include "TuioCursor.h"
+
 //#include "opencv.hpp"
 
 #include <iostream>
 #include <time.h>
 #include <math.h>
 #include <vector>
+#include <TuioServer.cpp>
 
 
 
 int main(void)
 {
+
+	//creation of a helper object
+	Helper helper;
+
 	//VideoCapture cap(0); // use the first camera found on the system
 	cv::VideoCapture cap("../mt_camera_raw.AVI");
 
@@ -37,8 +46,12 @@ int main(void)
 	double videoWidth = cap.get(cv::CAP_PROP_FRAME_WIDTH);
 	double videoHeight = cap.get(cv::CAP_PROP_FRAME_HEIGHT);
 
+	helper.set_hight(videoHeight);
+	helper.set_width(videoWidth);
+	
+	
 	cv::Mat frame, original, grey;
-
+	
 	int currentFrame = 0; // frame counter
 	clock_t ms_start, ms_end, ms_time; // time
 
@@ -47,9 +60,12 @@ int main(void)
 
 	cv::Mat background;
 
-	//creation of a helper object
-	Helper helper;
-
+	
+	//========== TUIO Server ==========
+	auto *server = new TuioServer();
+	
+	
+	
 	for(;;)
 	{
 		ms_start = clock(); // time start
@@ -143,12 +159,14 @@ int main(void)
 					cv::ellipse(original, rec, cv::Scalar(0,0,255), 1, 8);
 					cv::drawContours(original, contours, idx, cv::Scalar(255,0,0),1,8, hierarchy);
 
-
+					
 					std::string IDs = std::to_string(idx);
-					cv::putText(endresult,"... " + std::to_string(calc_id), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
-
+					rec = helper.normalize_rect(rec);
+					std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
+					
 				}
 			}
 		}
@@ -182,7 +200,12 @@ int main(void)
 		//putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
 		//putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
 
+		
+		//========== Danger Zone ==========
+		server->initFrame(TUIO::TuioTime::getSessionTime());
 
+
+		
 	}
 
 	std::cout << "SUCCESS: Program terminated like expected.\n";
