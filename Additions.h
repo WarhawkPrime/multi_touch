@@ -55,6 +55,9 @@ public:
 
 	void set_hight(double hight) {this->vhight = hight;}
 	void set_width(double width) {this->vwidth = width;}
+
+	void add_blob(TUIO::TuioCursor* tc);
+	std::vector<TUIO::TuioCursor*> get_blobs() {return tuioBlobs;};
 	
 private:
 	

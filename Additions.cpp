@@ -206,3 +206,8 @@ cv::RotatedRect Helper::normalize_rect(cv::RotatedRect rect)
 	return rect;
 }
 
+void Helper::add_blob(TUIO::TuioCursor* tc)
+{
+	tuioBlobs.push_back(tc);
+}
+

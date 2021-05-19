@@ -65,12 +65,20 @@ int main(void)
 	
 
 	//========== TUIO Server ==========
-	TUIO::TuioServer *server = new TUIO::TuioServer();
+	auto *server = new TUIO::TuioServer();
 	
 	
 	
 	for(;;)
 	{
+
+
+		//========== Danger Zone ==========
+		server->initFrame(TUIO::TuioTime::getSessionTime());
+
+
+
+
 		ms_start = clock(); // time start
 
 		cap >> frame; // get a new frame from the videostream
@@ -167,11 +175,26 @@ int main(void)
 					cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					
+
+					//========== normalize and send with tuio ==========
 					rec = helper.normalize_rect(rec);
-					std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
+					//std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
+					TUIO::TuioCursor *tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
+					
+					
+					//helper.add_blob()
+
+					//fill TUIO vectors
+
 					
 				}
 			}
+
+			
+			
+			server->sendFullMessages();
+
 		}
 		helper.overwright();
 
@@ -203,12 +226,7 @@ int main(void)
 		//putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
 		//putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
 
-		
-		//========== Danger Zone ==========
-		server->initFrame(TUIO::TuioTime::getSessionTime());
 
-
-		
 	}
 
 	std::cout << "SUCCESS: Program terminated like expected.\n";
