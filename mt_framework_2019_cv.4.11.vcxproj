@@ -89,13 +89,13 @@
       <SDLCheck>
       </SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\TUIO;..\oscpack;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;C:\Users\Henrik\source\repos\multi_touch\TUIO;C:\Users\Henrik\source\repos\multi_touch\oscpack;..\TUIO;..\oscpack;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib</AdditionalLibraryDirectories>
       <AdditionalOptions>opencv_world411d.lib ws2_32.lib winmm.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
