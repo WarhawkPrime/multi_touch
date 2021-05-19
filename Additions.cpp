@@ -27,7 +27,7 @@ int Helper::calc_id(cv::RotatedRect& rect)
 	int max_dis = 35;
 
 
-	double distance = std::numeric_limits<double>::max();
+	double distance = DBL_MAX;
 	double calc_dist;
 	int last_id = -1;
 
@@ -195,5 +195,19 @@ void Helper::overwright()
 	last_frame_tracked.clear();
 	last_frame_tracked = current_frame_tracked;
 	current_frame_tracked.clear();
+}
+
+cv::RotatedRect Helper::normalize_rect(cv::RotatedRect rect)
+{
+	
+	rect.center.x /= vwidth;
+	rect.center.y /= vhight;
+	
+	return rect;
+}
+
+void Helper::add_blob(TUIO::TuioCursor* tc)
+{
+	tuioBlobs.push_back(tc);
 }
 

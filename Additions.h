@@ -5,10 +5,16 @@
 #include "opencv2/video.hpp"
 #include "opencv2/highgui.hpp"
 
+#include "TuioServer.h"
+#include "TuioTime.h"
+#include "TuioCursor.h"
+
 #include <cmath>
 
 #include <iostream>
 #include <algorithm>
+
+#include <limits>
 
 
 
@@ -45,10 +51,25 @@ public:
 
 	void overwright();
 
+	cv::RotatedRect normalize_rect(cv::RotatedRect rect);
+
+	void set_hight(double hight) {this->vhight = hight;}
+	void set_width(double width) {this->vwidth = width;}
+
+	void add_blob(TUIO::TuioCursor* tc);
+	std::vector<TUIO::TuioCursor*> get_blobs() {return tuioBlobs;};
+	
 private:
 	
 	std::vector<std::shared_ptr<Node> > last_frame_tracked;
 	std::vector<std::shared_ptr<Node> > current_frame_tracked;
+	
+	double vhight;
+	double vwidth;
+	
+	std::vector<TUIO::TuioCursor*> tuioBlobs;
+	std::vector<TUIO::TuioCursor*>::iterator tuioBlobsIter;
+
 
 };
 

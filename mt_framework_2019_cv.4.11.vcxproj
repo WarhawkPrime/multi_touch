@@ -77,6 +77,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>..\TUIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -97,6 +98,7 @@
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib</AdditionalLibraryDirectories>
       <AdditionalOptions>opencv_world411d.lib ws2_32.lib winmm.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,6 +147,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\TUIO\TuioServer.h" />
     <ClInclude Include="Additions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -9,9 +9,16 @@
 #include "opencv2/video.hpp"
 #include "opencv2/highgui.hpp"
 
+
+
 #include <map>
 #include <unordered_map>
 #include "Additions.h"
+
+
+#include "TuioTime.h"
+#include "TuioCursor.h"
+#include "TuioServer.h"
 
 //#include "opencv.hpp"
 
@@ -21,9 +28,12 @@
 #include <vector>
 
 
-
 int main(void)
 {
+
+	//creation of a helper object
+	Helper helper;
+
 	//VideoCapture cap(0); // use the first camera found on the system
 	cv::VideoCapture cap("../mt_camera_raw.AVI");
 
@@ -37,8 +47,12 @@ int main(void)
 	double videoWidth = cap.get(cv::CAP_PROP_FRAME_WIDTH);
 	double videoHeight = cap.get(cv::CAP_PROP_FRAME_HEIGHT);
 
+	helper.set_hight(videoHeight);
+	helper.set_width(videoWidth);
+	
+	
 	cv::Mat frame, original, grey;
-
+	
 	int currentFrame = 0; // frame counter
 	clock_t ms_start, ms_end, ms_time; // time
 
@@ -47,11 +61,24 @@ int main(void)
 
 	cv::Mat background;
 
-	//creation of a helper object
-	Helper helper;
+	
+	
 
+	//========== TUIO Server ==========
+	auto *server = new TUIO::TuioServer();
+	
+	
+	
 	for(;;)
 	{
+
+
+		//========== Danger Zone ==========
+		server->initFrame(TUIO::TuioTime::getSessionTime());
+
+
+
+
 		ms_start = clock(); // time start
 
 		cap >> frame; // get a new frame from the videostream
@@ -143,14 +170,31 @@ int main(void)
 					cv::ellipse(original, rec, cv::Scalar(0,0,255), 1, 8);
 					cv::drawContours(original, contours, idx, cv::Scalar(255,0,0),1,8, hierarchy);
 
-
+					
 					std::string IDs = std::to_string(idx);
-					cv::putText(endresult,"... " + std::to_string(calc_id), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					
 
+					//========== normalize and send with tuio ==========
+					rec = helper.normalize_rect(rec);
+					//std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
+					TUIO::TuioCursor *tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
+					
+					
+					//helper.add_blob()
+
+					//fill TUIO vectors
+
+					
 				}
 			}
+
+			
+			
+			server->sendFullMessages();
+
 		}
 		helper.overwright();
 
