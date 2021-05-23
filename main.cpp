@@ -26,10 +26,15 @@
 #include <time.h>
 #include <math.h>
 #include <vector>
+#include <cstdio>
 
 
 int main(void)
 {
+
+	// Redirect all std::cout and std::err output to files
+	freopen("std_cout_output.txt", "w", stdout);
+	freopen("std_err_output.txt", "w", stderr);
 
 	//creation of a helper object
 	Helper helper;
@@ -61,7 +66,7 @@ int main(void)
 	
 	// Tracking of blobs from the last and current frame with two vectors
 	std::vector<TUIO::TuioCursor*> cursors_last;
-	std::vector<TUIO::TuioCursor*> cursors_current;
+	std::list<TUIO::TuioCursor*> cursors_current;
 
 	cv::Mat frame, original, grey;
 	
@@ -159,43 +164,44 @@ int main(void)
 			for(int idx = 0; idx >= 0; idx = hierarchy[idx][0])
 			{
 				//check contour size (number of points) and area ("blob" size)
-				if( cv::contourArea( cv::Mat(contours.at(idx))) > 4 && contours.at(idx).size() > 1)
+				if (cv::contourArea(cv::Mat(contours.at(idx))) > 4 && contours.at(idx).size() > 1)
 				{
 
 					cv::RotatedRect rec = cv::fitEllipse(cv::Mat(contours.at(idx)));
 					int calc_id = helper.calc_id(rec);
 					//std::cout << "test id: " << calc_id << std::endl;
-					
-					
-					cv::ellipse(original, rec, cv::Scalar(0,0,255), 1, 8);
-					cv::drawContours(original, contours, idx, cv::Scalar(255,0,0),1,8, hierarchy);
 
-					
+
+					cv::ellipse(original, rec, cv::Scalar(0, 0, 255), 1, 8);
+					cv::drawContours(original, contours, idx, cv::Scalar(255, 0, 0), 1, 8, hierarchy);
+
+
 					std::string IDs = std::to_string(idx);
 					cv::putText(endresult, "... " + std::to_string(calc_id), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
-					
+
 
 					//========== normalize and send with tuio ==========
 					rec = helper.normalize_rect(rec);
 					//std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
-					
-					
+
+
 					//if the blob list is not empty
-					if(!helper.get_blobs().empty()) {
-						
+					if (!helper.get_blobs().empty()) {
+
+
 						bool blob_found = false;
 						//search for an existing blob
-						for(auto blob : helper.get_blobs())
+						for (auto blob : helper.get_blobs())
 						{
-							if(blob->getCursorID() == calc_id)
+							if (blob->getCursorID() == calc_id)
 							{
 								//calculation of velocity and acc
-								
 
-								blob->update(rec.center.x, rec.center.y, 
+
+								blob->update(rec.center.x, rec.center.y,
 									helper.calc_x_velocity(blob->getX(), rec.center.x),
 									helper.calc_y_velocity(blob->getY(), rec.center.y),
 									1);
@@ -205,7 +211,7 @@ int main(void)
 							}
 						}
 						//existing not found -> create new one
-						if(!blob_found)
+						if (!blob_found)
 						{
 							TUIO::TuioCursor* tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
 							server->addExternalTuioCursor(tcur);
@@ -219,9 +225,51 @@ int main(void)
 						server->addExternalTuioCursor(tcur);
 						helper.add_blob(tcur);
 					}
+					cursors_current = server->getTuioCursors();
 
+					int last_size = cursors_last.size();
+					int current_size = cursors_current.size();
+					std::vector<int> to_remove;
+					bool found_id = false;
+					
+					
+					
+					std::list<TUIO::TuioCursor*>::iterator it;
 					//ids aussortieren: compare current and last frame, take difference
+					for (it = cursors_current.begin(); it != cursors_current.end(); it++) {
 
+
+						for (int j = 0; j < last_size; j++) {
+
+							// If the id is present in both vectors, there is no need to delete them.
+							if (cursors_last.at(j)->getCursorID() == cursors_current.at(i)->getCursorID()) {
+
+								found_id = true;
+								break;
+							}
+						}
+
+						if (!found_id) {
+
+							to_remove.push_back(cursors_current.at(i)->getCursorID());
+							std::cout << "----- To remove: " << cursors_current.at(i)->getCursorID() << std::endl;
+						}
+
+
+
+					}
+						
+
+					for (auto blob : helper.get_blobs())
+					{
+						for (int i = 0; i < to_remove.size(); i++) {
+
+							if (blob->getCursorID() == to_remove.at(i))
+							{
+								server->removeExternalTuioCursor(blob);
+							}
+						}
+					}
 
 					/*
 					if(!helper.get_blobs().empty()) {
@@ -249,9 +297,32 @@ int main(void)
 				}
 
 			}
+			
 		}
 
+		std::vector< std::shared_ptr<Node> > tmp = helper.get_current_tracked();
 		
+		if (!tmp.empty()) {
+
+			std::cout << "===============================================================" << std::endl;
+			std::cout << "Vector of current tracked blobs:" << std::endl;
+			for (int i = 0; i < tmp.size(); i++) {
+
+				std::cout << "ID: " << tmp.at(i).get()->id << std::endl;
+
+			}
+			std::cout << "-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-" << std::endl;
+			std::cout << "Vector of last frames tracked blobs:" << std::endl;
+
+			tmp = helper.get_last_tracked();
+			for (int i = 0; i < tmp.size(); i++) {
+
+				std::cout << "ID: " << tmp.at(i).get()->id << std::endl;
+
+			}
+		}
+		
+		cursors_last = cursors_current;
 
 		server->commitFrame();
 
