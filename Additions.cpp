@@ -6,7 +6,7 @@ int Helper::calc_id(cv::RotatedRect& rect)
 {
 	//define k and the max distance 
 	const int k = 1;	//1 for a finger, 5 for a hand
-	int max_dis = 35;
+	int max_dis = 20;
 
 
 	double distance = DBL_MAX;
@@ -42,7 +42,7 @@ int Helper::calc_id(cv::RotatedRect& rect)
 			}
 			catch(const std::exception& e)
 			{
-				std::cerr << " id doppelt trotz erstellter ID : " << current_id << " _ " << e.what();
+				std::cerr << " double id not found : " << current_id << " _ " << e.what();
 			}
 			
 			return current_id;
@@ -56,9 +56,8 @@ int Helper::calc_id(cv::RotatedRect& rect)
 			}
 			catch(const std::exception& e)
 			{
-				std::cerr << " id doppelt trotz gefundener id : " << current_id << " _ " << e.what();
+				std::cerr << " double id but found: " << current_id << " _ " << e.what();
 			}
-			
 			return current_id;
 		}
 	}
@@ -69,12 +68,16 @@ int Helper::calc_id(cv::RotatedRect& rect)
 		current_id = this->get_unique_id();
 		this->increment_unique_id();
 
-		add_RRect_to_current(rect, current_id);
+		try
+		{
+			add_RRect_to_current(rect, current_id);
+		}
+		catch(const std::exception& e)
+		{
+			std::cerr << " double id but found: " << current_id << " _ " << e.what();
+		}
 		return current_id;
 	}
-
-
-	
 
 	return 0;
 }
@@ -143,9 +146,9 @@ void Helper::add_RRect_to_current(cv::RotatedRect rect, int c_id)
 	{
 		if(c_id == rrect.get()->id)
 		{
-			//c_id = current_frame_tracked.size();
 			throw std::bad_typeid();
-			
+			c_id = this->get_unique_id();
+			this->increment_unique_id();
 		}
 	}
 
