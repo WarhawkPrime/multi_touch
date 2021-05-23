@@ -34,6 +34,15 @@ int main(void)
 	//creation of a helper object
 	Helper helper;
 
+	//========== TUIO Server ========== only once!
+	auto* server = new TUIO::TuioServer();
+	server->setVerbose(true);
+
+
+	TUIO::TuioTime current_time = 0;
+	TUIO::TuioTime last_time = 0;
+
+
 	//VideoCapture cap(0); // use the first camera found on the system
 	cv::VideoCapture cap("../mt_camera_raw.AVI");
 
@@ -64,19 +73,19 @@ int main(void)
 	
 	
 
-	//========== TUIO Server ==========
-	auto *server = new TUIO::TuioServer();
 	
+
 	
-	
+
+	//========== Beginning of single Frame ==========
 	for(;;)
 	{
 
-
 		//========== Danger Zone ==========
 		server->initFrame(TUIO::TuioTime::getSessionTime());
-
-
+		//server->sendFullMessages();
+		//current_time = TUIO::TuioTime::getSessionTime();
+		//helper.calc_delta_time(last_time, current_time);
 
 
 		ms_start = clock(); // time start
@@ -172,7 +181,8 @@ int main(void)
 
 					
 					std::string IDs = std::to_string(idx);
-					cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					cv::putText(endresult, "... " + std::to_string(calc_id), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
+					//cv::putText(endresult,"... " + std::to_string(calc_id) + " x: " + std::to_string(rec.center.x) + " y: " + std::to_string(rec.center.y), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(endresult, "test id: " + std::to_string(calc_id) + "__" + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					//cv::putText(thres_res, idx + (std::string)_itoa(idx, buffer, 10), rec.center, cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8);
 					
@@ -180,25 +190,79 @@ int main(void)
 					//========== normalize and send with tuio ==========
 					rec = helper.normalize_rect(rec);
 					//std::cout << "id: " << calc_id << " x: " << rec.center.x << " y: " << rec.center.y << std::endl;
-					TUIO::TuioCursor *tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
 					
 					
-					//helper.add_blob()
+					//if the blob list is not empty
+					if(!helper.get_blobs().empty()) {
+						
+						bool blob_found = false;
+						//search for an existing blob
+						for(auto blob : helper.get_blobs())
+						{
+							if(blob->getCursorID() == calc_id)
+							{
+								//calculation of velocity and acc
+								
 
-					//fill TUIO vectors
+								blob->update(rec.center.x, rec.center.y, 
+									helper.calc_x_velocity(blob->getX(), rec.center.x),
+									helper.calc_y_velocity(blob->getY(), rec.center.y),
+									1);
+								//server->updateExternalTuioCursor(blob);
+								server->updateTuioCursor(blob, rec.center.x, rec.center.y);
+								blob_found = true;
+							}
+						}
+						//existing not found -> create new one
+						if(!blob_found)
+						{
+							TUIO::TuioCursor* tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
+							server->addExternalTuioCursor(tcur);
+							helper.add_blob(tcur);
+						}
+					}
+					//if blob list is empty
+					else
+					{
+						TUIO::TuioCursor* tcur = new TUIO::TuioCursor(server->getSessionID(), calc_id, rec.center.x, rec.center.y);
+						server->addExternalTuioCursor(tcur);
+						helper.add_blob(tcur);
+					}
 
-					
+					//ids aussortieren: compare current and last frame, take difference
+
+
+					/*
+					if(!helper.get_blobs().empty()) {
+
+						for(auto blob : helper.get_blobs())
+						{
+							if(blob->getCursorID() == calc_id)
+							{
+								//server->updateTuioCursor(blob, rec.center.x, rec.center.y);
+								server->addExternalTuioCursor(tcur);
+							}
+							else
+							{
+								helper.add_blob(tcur);
+								server->addExternalTuioCursor(tcur);
+							}
+						}
+					}
+					else
+					{
+						helper.add_blob(tcur);
+						server->addExternalTuioCursor(tcur);
+					}
+					*/
 				}
+
 			}
-
-			
-			
-			server->sendFullMessages();
-
 		}
+
+		server->commitFrame();
+
 		helper.overwright();
-
-
 		//--------------------------
 		//	end
 		//--------------------------
@@ -215,8 +279,9 @@ int main(void)
 		// time end
 		ms_end = clock();
 		ms_time = ms_end - ms_start;
+		helper.set_delta_t(ms_time);
+		std::cout << "Time: " << ms_time << std::endl;
 
-		
 		//imshow("window", original); // render the frame to a window
 		cv::imshow("window", original); // render the frame to a window
 		
@@ -225,9 +290,10 @@ int main(void)
 
 		//putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
 		//putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
+	
+	
 
-
-	}
+	} 
 
 	std::cout << "SUCCESS: Program terminated like expected.\n";
 	return 1;

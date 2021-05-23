@@ -2,24 +2,6 @@
 
 
 
-/*
-k = 1
-thresh = define a threshold of distance to not take a id from another finger/hand
-
-get list with all RotatedRect from (currentFrame - 1) > 0
-compare euclidean distance from current RotatedRect from currentFrame with all RotatedRect from the list
-take Id of nearest rrect
-if not found, create new id (size of rrect list + 1)
-
-*/
-
-
-/*
-calculate distance from current rect to every other rect from last_
-
-*/
-
-
 int Helper::calc_id(cv::RotatedRect& rect)
 {
 	//define k and the max distance 
@@ -29,7 +11,7 @@ int Helper::calc_id(cv::RotatedRect& rect)
 
 	double distance = DBL_MAX;
 	double calc_dist;
-	int last_id = -1;
+	int current_id = -1;
 
 
 	//there were frames with fingers before
@@ -44,59 +26,51 @@ int Helper::calc_id(cv::RotatedRect& rect)
 			if( (calc_dist < distance) && (calc_dist <= max_dis) )
 			{
 				distance = calc_dist;
-				last_id = last_rect.get()->id;
+				current_id = last_rect.get()->id;
 			}
 		}
-		//out of the for loop because a new finger appears:
 
 		//no existing id found -> create new id. no dublicate with last and current 
-		if(last_id == -1)
+		if(current_id == -1)
 		{
-			//search last and current for dublicate id
-			std::vector<int> ids;
-			for(auto& last_rect : last_frame_tracked)
+			current_id = this->get_unique_id();
+			this->increment_unique_id();
+
+			try
 			{
-				ids.push_back(last_rect.get()->id);
+				add_RRect_to_current(rect, current_id);
 			}
-			for(auto& current_rect : current_frame_tracked)
+			catch(const std::exception& e)
 			{
-				ids.push_back(current_rect.get()->id);
-			}
-			
-			std::sort(ids.begin(), ids.end());
-			
-			last_id = 0;
-			for(auto& id : ids)
-			{
-				if(last_id == id)
-					last_id++;
+				std::cerr << " id doppelt trotz erstellter ID : " << current_id << " _ " << e.what();
 			}
 			
-			add_RRect_to_current(rect, last_id);
-			return last_id;
+			return current_id;
 		}
-		// id gefunden
+		// id found
 		else
 		{
-			add_RRect_to_current(rect, last_id);
-			return last_id;
+			try
+			{
+				add_RRect_to_current(rect, current_id);
+			}
+			catch(const std::exception& e)
+			{
+				std::cerr << " id doppelt trotz gefundener id : " << current_id << " _ " << e.what();
+			}
+			
+			return current_id;
 		}
 	}
-	//no existing in last_frame -> create new id depending on size of current_frame_tracked - working as intended
+	//no existing in last_frame -> create new id and add it to the current_frame
 	else
 	{
-		if(current_frame_tracked.empty())
-		{
-			last_id = 0;
-			add_RRect_to_current(rect, last_id);
-			return last_id;
-		}
-		else
-		{
-			last_id = current_frame_tracked.size();
-			add_RRect_to_current(rect, last_id);
-			return last_id;
-		}
+
+		current_id = this->get_unique_id();
+		this->increment_unique_id();
+
+		add_RRect_to_current(rect, current_id);
+		return current_id;
 	}
 
 
@@ -106,42 +80,53 @@ int Helper::calc_id(cv::RotatedRect& rect)
 }
 
 
-
-/*
-void Helper::k_nearest_neighbour(cv::RotatedRect rect)
-{
-	//define k and the max distance 
-	const int k = 1;	//1 for a finger, 5 for a hand
-	int max_dis = 50;	
-
-	std::array<cv::RotatedRect, k> nn;
-
-	//calc distances to all rects and select k rects with the smallest distance
-	for(auto& last_rect : last_frame_tracked)
-	{
-		double distance = calc_euclidean_distance(rect, last_rect.first);
-		std::cout << "distanz: " << distance << std::endl;
-
-		
-		if(distance <= max_dis)
-		{
-
-			if(nn.empty())
-			{
-				nn.at(0) = 
-			}
-
-
-		}
-		
-	}
-}
-*/
-
 double Helper::calc_euclidean_distance(cv::RotatedRect p, cv::RotatedRect q)
 {
 	return sqrt( pow((q.center.x - p.center.x),2) + pow((q.center.y - p.center.y),2) );
 }
+
+
+double Helper::calc_x_velocity(double old_x, double new_x)
+{
+	
+	double s = std::abs(new_x - old_x);
+	double t = this->delta_t;	//millisek
+	
+	if(t == 0)
+	{
+		return 0;
+	}
+
+	return s/t;
+}
+
+double Helper::calc_y_velocity(double old_y, double new_y)
+{
+	double s = std::abs(new_y - old_y);
+	double t = this->delta_t;
+
+	if(t == 0)
+	{
+		return 0;
+	}
+
+	return s / t;
+}
+
+double Helper::calc_acc(double v_old, double v_new)
+{
+	
+
+	double t = this->delta_t;
+	if(t == 0)
+	{
+		return 0;
+	}
+
+	return std::abs((v_old-v_new))/delta_t;
+}
+
+
 
 void Helper::add_RRect_to_last(cv::RotatedRect rect, int id)
 {
@@ -158,7 +143,9 @@ void Helper::add_RRect_to_current(cv::RotatedRect rect, int c_id)
 	{
 		if(c_id == rrect.get()->id)
 		{
-			c_id = current_frame_tracked.size();
+			//c_id = current_frame_tracked.size();
+			throw std::bad_typeid();
+			
 		}
 	}
 
@@ -196,6 +183,8 @@ void Helper::overwright()
 	last_frame_tracked = current_frame_tracked;
 	current_frame_tracked.clear();
 }
+
+
 
 cv::RotatedRect Helper::normalize_rect(cv::RotatedRect rect)
 {
