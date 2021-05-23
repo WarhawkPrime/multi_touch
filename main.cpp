@@ -36,7 +36,7 @@ int main(void)
 
 	//========== TUIO Server ========== only once!
 	auto* server = new TUIO::TuioServer();
-	server->setVerbose(true);
+	server->setVerbose(false);
 
 
 	TUIO::TuioTime current_time = 0;
@@ -59,23 +59,16 @@ int main(void)
 	helper.set_hight(videoHeight);
 	helper.set_width(videoWidth);
 	
-	
+	// Tracking of blobs from the last and current frame with two vectors
+	std::vector<TUIO::TuioCursor*> cursors_last;
+	std::vector<TUIO::TuioCursor*> cursors_current;
+
 	cv::Mat frame, original, grey;
 	
 	int currentFrame = 0; // frame counter
 	clock_t ms_start, ms_end, ms_time; // time
-
 	char buffer[10]; // buffer for int to ascii conversion -> itoa(...)
-
-
 	cv::Mat background;
-
-	
-	
-
-	
-
-	
 
 	//========== Beginning of single Frame ==========
 	for(;;)
@@ -153,7 +146,6 @@ int main(void)
 		if(!hierarchy.empty() )
 		{
 
-
 			/*
 			create RotatedRect
 			calc id from last_frame
@@ -161,7 +153,6 @@ int main(void)
 			insert rec with new id to current_frame
 			draw ellipses from current_frame
 			overwrite last_frame with current_frame
-	
 			*/
 
 
@@ -259,6 +250,8 @@ int main(void)
 
 			}
 		}
+
+		
 
 		server->commitFrame();
 
