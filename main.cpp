@@ -289,5 +289,6 @@ int main(void)
 	} 
 
 	std::cout << "SUCCESS: Program terminated like expected.\n";
+	std::cout << "unique id: " << helper.get_unique_id() << std::endl;
 	return 1;
 }

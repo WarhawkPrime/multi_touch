@@ -37,6 +37,9 @@ class Helper
 {
 
 public:
+	
+	std::vector<std::shared_ptr<Node>> get_current_tracked() {return current_frame_tracked;}
+	std::vector<std::shared_ptr<Node>> get_last_tracked() { return last_frame_tracked; }
 
 
 	int calc_id(cv::RotatedRect& rect);
@@ -72,6 +75,8 @@ public:
 	//id handling
 	void increment_unique_id(){ unique_id++;}
 	int get_unique_id() const {return unique_id;}
+
+	
 
 private:
 	
