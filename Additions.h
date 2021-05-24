@@ -26,10 +26,12 @@ struct Node
 			{
 				this->rec = rec;
 				this->id = id;
+				this->live = true;
 			}
 	public:
 		cv::RotatedRect rec;
 		int id;
+		int live = 1;
 };
 
 
@@ -80,8 +82,10 @@ public:
 
 private:
 	
-	std::vector<std::shared_ptr<Node> > last_frame_tracked;
-	std::vector<std::shared_ptr<Node> > current_frame_tracked;
+	std::vector<std::shared_ptr<Node>> last_frame_tracked;
+	std::vector<std::shared_ptr<Node>>::iterator l_frame_it;
+
+	std::vector<std::shared_ptr<Node>> current_frame_tracked;
 	
 	double vhight;
 	double vwidth;
