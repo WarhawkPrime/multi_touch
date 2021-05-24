@@ -182,8 +182,52 @@ bool Helper::current_frame_empty()
 
 void Helper::overwright()
 {
-	last_frame_tracked.clear();
-	last_frame_tracked = current_frame_tracked;
+	//check in last frame if there are ids not in current but still "live". 
+	//if so, keep them to the next last_frame but decrement live counter 
+	//doesn't draw those elements but keeps them alive to skip one frame
+	
+	//set live
+	l_frame_it = last_frame_tracked.begin();
+
+	for( ; l_frame_it != last_frame_tracked.end();)
+	{
+		
+		if(l_frame_it->get()->live == 0)
+		{
+			l_frame_it = last_frame_tracked.erase(l_frame_it);
+		}
+		else
+		{
+			l_frame_it->get()->live --;
+			++l_frame_it;
+		}
+	}
+
+	//now compare id's, doubles are replaced
+	if(!current_frame_tracked.empty())
+	{
+		for(auto& new_node : current_frame_tracked)
+		{
+			bool duplicate = false;
+			for(auto& node : last_frame_tracked)
+			{
+				if(new_node.get()->id == node.get()->id)
+				{
+					node = new_node;
+					duplicate = true;
+				}
+			}
+			
+			if(!duplicate)
+			{
+				last_frame_tracked.push_back(new_node);
+			}
+		}
+	}
+
+	//last_frame_tracked.clear();
+	//last_frame_tracked = current_frame_tracked;
+	//this->last_frame_tracked.insert(last_frame_tracked.end(), this->current_frame_tracked.begin(), this->current_frame_tracked.end());
 	current_frame_tracked.clear();
 }
 
