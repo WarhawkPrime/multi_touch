@@ -65,8 +65,8 @@ int main(void)
 	helper.set_width(videoWidth);
 	
 	// Tracking of blobs from the last and current frame with two vectors
-	std::vector<TUIO::TuioCursor*> cursors_last;
-	std::list<TUIO::TuioCursor*> cursors_current;
+	//std::list<TUIO::TuioCursor*> cursors_last;
+	//std::list<TUIO::TuioCursor*> cursors_current;
 
 	cv::Mat frame, original, grey;
 	
@@ -225,51 +225,53 @@ int main(void)
 						server->addExternalTuioCursor(tcur);
 						helper.add_blob(tcur);
 					}
-					cursors_current = server->getTuioCursors();
-
-					int last_size = cursors_last.size();
-					int current_size = cursors_current.size();
+					/*cursors_current = server->getTuioCursors();
+					
+					
 					std::vector<int> to_remove;
-					bool found_id = false;
+					bool found_id = false;*/
 					
 					
 					
-					std::list<TUIO::TuioCursor*>::iterator it;
-					//ids aussortieren: compare current and last frame, take difference
-					for (it = cursors_current.begin(); it != cursors_current.end(); it++) {
+					//std::list<TUIO::TuioCursor*>::iterator it;
+					//std::list<TUIO::TuioCursor*>::iterator it_last;
+					////ids aussortieren: compare current and last frame, take difference
+					//for (it = cursors_current.begin(); it != cursors_current.end(); it++) {
 
 
-						for (int j = 0; j < last_size; j++) {
+					//	for (it_last = cursors_last.begin(); it_last != cursors_last.end(); it++) {
 
-							// If the id is present in both vectors, there is no need to delete them.
-							if (cursors_last.at(j)->getCursorID() == cursors_current.at(i)->getCursorID()) {
+					//		
 
-								found_id = true;
-								break;
-							}
-						}
+					//		// If the id is present in both vectors, there is no need to delete them.
+					//		if (it_last._Ptr->_Myval->getCursorID() == it._Ptr->_Myval->getCursorID()) {
+					//			
+					//			found_id = true;
+					//			break;
+					//		}
+					//	}
 
-						if (!found_id) {
+					//	if (!found_id) {
 
-							to_remove.push_back(cursors_current.at(i)->getCursorID());
-							std::cout << "----- To remove: " << cursors_current.at(i)->getCursorID() << std::endl;
-						}
+					//		to_remove.push_back(it._Ptr->_Myval->getCursorID());
+					//		std::cout << "----- To remove: " << it._Ptr->_Myval->getCursorID() << std::endl;
+					//	}
 
+					//	found_id = false;
 
+					//}
+					//	
 
-					}
-						
+					//for (auto blob : helper.get_blobs())
+					//{
+					//	for (int i = 0; i < to_remove.size(); i++) {
 
-					for (auto blob : helper.get_blobs())
-					{
-						for (int i = 0; i < to_remove.size(); i++) {
-
-							if (blob->getCursorID() == to_remove.at(i))
-							{
-								server->removeExternalTuioCursor(blob);
-							}
-						}
-					}
+					//		if (blob->getCursorID() == to_remove.at(i))
+					//		{
+					//			server->removeExternalTuioCursor(blob);
+					//		}
+					//	}
+					//}
 
 					/*
 					if(!helper.get_blobs().empty()) {
@@ -299,7 +301,7 @@ int main(void)
 			}
 			
 		}
-
+		/*
 		std::vector< std::shared_ptr<Node> > tmp = helper.get_current_tracked();
 		
 		if (!tmp.empty()) {
@@ -321,8 +323,8 @@ int main(void)
 
 			}
 		}
-		
-		cursors_last = cursors_current;
+		*/
+		//cursors_last = cursors_current;
 
 		server->commitFrame();
 
