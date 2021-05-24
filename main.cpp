@@ -85,7 +85,7 @@ int main(void)
 		//current_time = TUIO::TuioTime::getSessionTime();
 		//helper.calc_delta_time(last_time, current_time);
 
-
+	
 		ms_start = clock(); // time start
 
 		cap >> frame; // get a new frame from the videostream
@@ -225,106 +225,76 @@ int main(void)
 						server->addExternalTuioCursor(tcur);
 						helper.add_blob(tcur);
 					}
-					/*cursors_current = server->getTuioCursors();
-					
-					
-					std::vector<int> to_remove;
-					bool found_id = false;*/
-					
-					
-					
-					//std::list<TUIO::TuioCursor*>::iterator it;
-					//std::list<TUIO::TuioCursor*>::iterator it_last;
-					////ids aussortieren: compare current and last frame, take difference
-					//for (it = cursors_current.begin(); it != cursors_current.end(); it++) {
-
-
-					//	for (it_last = cursors_last.begin(); it_last != cursors_last.end(); it++) {
-
-					//		
-
-					//		// If the id is present in both vectors, there is no need to delete them.
-					//		if (it_last._Ptr->_Myval->getCursorID() == it._Ptr->_Myval->getCursorID()) {
-					//			
-					//			found_id = true;
-					//			break;
-					//		}
-					//	}
-
-					//	if (!found_id) {
-
-					//		to_remove.push_back(it._Ptr->_Myval->getCursorID());
-					//		std::cout << "----- To remove: " << it._Ptr->_Myval->getCursorID() << std::endl;
-					//	}
-
-					//	found_id = false;
-
-					//}
-					//	
-
-					//for (auto blob : helper.get_blobs())
-					//{
-					//	for (int i = 0; i < to_remove.size(); i++) {
-
-					//		if (blob->getCursorID() == to_remove.at(i))
-					//		{
-					//			server->removeExternalTuioCursor(blob);
-					//		}
-					//	}
-					//}
-
-					/*
-					if(!helper.get_blobs().empty()) {
-
-						for(auto blob : helper.get_blobs())
-						{
-							if(blob->getCursorID() == calc_id)
-							{
-								//server->updateTuioCursor(blob, rec.center.x, rec.center.y);
-								server->addExternalTuioCursor(tcur);
-							}
-							else
-							{
-								helper.add_blob(tcur);
-								server->addExternalTuioCursor(tcur);
-							}
-						}
-					}
-					else
-					{
-						helper.add_blob(tcur);
-						server->addExternalTuioCursor(tcur);
-					}
-					*/
 				}
-
 			}
-			
 		}
-		/*
-		std::vector< std::shared_ptr<Node> > tmp = helper.get_current_tracked();
+
+		// Remove all blobs from the servers and helpers list that no longer exist.
+		// Create two vectors of the ids from the current and last frame.
+		// Then, check which ids of the last frame don't exist in the current frame, add them to a third vector and remove all cursors with these ids
+
+		// Variables
+		std::vector<std::shared_ptr<Node>> cursors_last = helper.get_last_tracked();
+		std::vector<std::shared_ptr<Node>> cursors_current = helper.get_current_tracked();
+		std::vector<int> ids_last, ids_current, ids_to_remove;
+		bool id_found = false;
+
+		// Add current ids
+		for (auto N : cursors_current) {
+
+			ids_current.push_back(N.get()->id);
+		}
+
+		// Add last ids
+		for (auto N : cursors_last) {
+
+			ids_last.push_back(N.get()->id);
+		}
+
+		// Find ids to remove
+		for (int last : ids_last) {
+
+			for (int curr : ids_current) {
+
+				// If certain id exists in both, break
+				if (last == curr) {
+
+					id_found = true;
+					break;
+				}
+				else {
+
+					id_found = false;
+				}
+			}
+
+			// If the last id wasn't found in current, add the id to ids_to_remove vector
+			if (!id_found) {
+
+				ids_to_remove.push_back(last);
+				std::cout << "Id to remove: " << last << std::endl;
+			}
+
+			id_found = false;
+		}
+
+		// Remove the cursors
+		for (int id : ids_to_remove) {
+
+			for (auto cursor : server->getTuioCursors()) {
+
+				if (cursor->getCursorID() == id) {
+					server->removeExternalTuioCursor(cursor);
+				}
+			}
+		}
 		
-		if (!tmp.empty()) {
-
-			std::cout << "===============================================================" << std::endl;
-			std::cout << "Vector of current tracked blobs:" << std::endl;
-			for (int i = 0; i < tmp.size(); i++) {
-
-				std::cout << "ID: " << tmp.at(i).get()->id << std::endl;
-
-			}
-			std::cout << "-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-" << std::endl;
-			std::cout << "Vector of last frames tracked blobs:" << std::endl;
-
-			tmp = helper.get_last_tracked();
-			for (int i = 0; i < tmp.size(); i++) {
-
-				std::cout << "ID: " << tmp.at(i).get()->id << std::endl;
-
-			}
-		}
-		*/
-		//cursors_last = cursors_current;
+		// Write std::cout to file and print all vector sizes
+		std::cout << "Size of helper.get_last_tracked: " << helper.get_last_tracked().size() << std::endl;
+		std::cout << "Size of helper.get_current_tracked: " << helper.get_current_tracked().size() << std::endl;
+		std::cout << "Size of helper.getBlobs: " << helper.get_blobs().size() << std::endl;
+		std::cout << "Size of server.getTuioCursors: " << server->getTuioCursors().size() << std::endl;
+		std::cout << "---------------------- End of Frame " << currentFrame << " ------------------------------------------" << std::endl;
 
 		server->commitFrame();
 
