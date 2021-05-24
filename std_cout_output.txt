@@ -1,0 +1,3111 @@
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\videoio_registry.cpp (187) cv::`anonymous-namespace'::VideoBackendRegistry::VideoBackendRegistry VIDEOIO: Enabled backends(7, sorted by priority): FFMPEG(1000); GSTREAMER(990); INTEL_MFX(980); MSMF(970); DSHOW(960); CV_IMAGES(950); CV_MJPEG(940)
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (340) cv::impl::getPluginCandidates Found 2 plugin(s) for FFMPEG
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load C:\Users\Henrik\source\repos\multi_touch\multi_touch\x64\Debug\opencv_videoio_ffmpeg411_64.dll => FAILED
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load opencv_videoio_ffmpeg411_64.dll => FAILED
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (340) cv::impl::getPluginCandidates Found 2 plugin(s) for GSTREAMER
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load C:\Users\Henrik\source\repos\multi_touch\multi_touch\x64\Debug\opencv_videoio_gstreamer411_64.dll => FAILED
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load opencv_videoio_gstreamer411_64.dll => FAILED
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (340) cv::impl::getPluginCandidates Found 2 plugin(s) for INTEL_MFX
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load C:\Users\Henrik\source\repos\multi_touch\multi_touch\x64\Debug\opencv_videoio_intel_mfx411_64.dll => FAILED
+[ INFO:0] global C:\build\master_winpack-build-win64-vc15\opencv\modules\videoio\src\backend_plugin.cpp (172) cv::impl::DynamicLib::libraryLoad load opencv_videoio_intel_mfx411_64.dll => FAILED
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 0 ------------------------------------------
+Time: 114
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 1 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 2 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 3 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 4 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 5 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 6 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 7 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 8 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 9 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 10 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 11 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 12 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 13 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 14 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 15 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 16 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 17 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 18 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 19 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 20 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 21 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 22 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 23 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 24 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 25 ------------------------------------------
+Time: 590
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 26 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 27 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 28 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 29 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 30 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 31 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 32 ------------------------------------------
+Time: 74
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 33 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 34 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 35 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 36 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 37 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 38 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 39 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 40 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 41 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 42 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 43 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 44 ------------------------------------------
+Time: 75
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 45 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 46 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 0
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 47 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 48 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 49 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 50 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 51 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 52 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 5
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 53 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 6
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 54 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 9
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 55 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 56 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 57 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 58 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 59 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 60 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 61 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 10
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 62 ------------------------------------------
+Time: 77
+Id to remove: 7
+Id to remove: 9
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 11
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 63 ------------------------------------------
+Time: 79
+Id to remove: 7
+Id to remove: 9
+Id to remove: 10
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 12
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 64 ------------------------------------------
+Time: 74
+Id to remove: 8
+Id to remove: 10
+Id to remove: 11
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 65 ------------------------------------------
+Time: 79
+Id to remove: 11
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 66 ------------------------------------------
+Time: 76
+Id to remove: 12
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 67 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 68 ------------------------------------------
+Time: 76
+Id to remove: 12
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 69 ------------------------------------------
+Time: 83
+Id to remove: 12
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 70 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 14
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 71 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 15
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 72 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 15
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 73 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 15
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 74 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 15
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 75 ------------------------------------------
+Time: 79
+Id to remove: 4
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 16
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 76 ------------------------------------------
+Time: 78
+Id to remove: 0
+Id to remove: 4
+Id to remove: 13
+Id to remove: 8
+Id to remove: 14
+Id to remove: 15
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 16
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 77 ------------------------------------------
+Time: 79
+Id to remove: 0
+Id to remove: 1
+Id to remove: 2
+Id to remove: 3
+Id to remove: 13
+Id to remove: 8
+Id to remove: 14
+Id to remove: 15
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 17
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 78 ------------------------------------------
+Time: 73
+Id to remove: 2
+Id to remove: 3
+Id to remove: 6
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 17
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 79 ------------------------------------------
+Time: 79
+Id to remove: 6
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 21
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 80 ------------------------------------------
+Time: 78
+Id to remove: 5
+Id to remove: 16
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 23
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 81 ------------------------------------------
+Time: 81
+Id to remove: 5
+Id to remove: 16
+Id to remove: 21
+Id to remove: 22
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 24
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 82 ------------------------------------------
+Time: 75
+Id to remove: 21
+Id to remove: 22
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 26
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 83 ------------------------------------------
+Time: 83
+Id to remove: 24
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 27
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 84 ------------------------------------------
+Time: 80
+Id to remove: 17
+Id to remove: 24
+Id to remove: 26
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 29
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 85 ------------------------------------------
+Time: 82
+Id to remove: 17
+Id to remove: 26
+Id to remove: 28
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 30
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 86 ------------------------------------------
+Time: 77
+Id to remove: 25
+Id to remove: 28
+Id to remove: 29
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 30
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 87 ------------------------------------------
+Time: 81
+Id to remove: 29
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 33
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 88 ------------------------------------------
+Time: 75
+Id to remove: 27
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 33
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 89 ------------------------------------------
+Time: 80
+Id to remove: 25
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 36
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 90 ------------------------------------------
+Time: 80
+Id to remove: 27
+Id to remove: 35
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 36
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 91 ------------------------------------------
+Time: 84
+Id to remove: 32
+Id to remove: 27
+Id to remove: 35
+Id to remove: 25
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 37
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 92 ------------------------------------------
+Time: 80
+Id to remove: 25
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 38
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 93 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 38
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 94 ------------------------------------------
+Time: 79
+Id to remove: 1
+Id to remove: 37
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 38
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 95 ------------------------------------------
+Time: 81
+Id to remove: 1
+Id to remove: 18
+Id to remove: 19
+Id to remove: 34
+Id to remove: 37
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 41
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 96 ------------------------------------------
+Time: 82
+Id to remove: 18
+Id to remove: 19
+Id to remove: 31
+Id to remove: 34
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 42
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 97 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 43
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 98 ------------------------------------------
+Time: 82
+Id to remove: 41
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 46
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 99 ------------------------------------------
+Time: 83
+Id to remove: 44
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 47
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 100 ------------------------------------------
+Time: 76
+Id to remove: 43
+Id to remove: 44
+Id to remove: 46
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 48
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 101 ------------------------------------------
+Time: 83
+Id to remove: 43
+Id to remove: 46
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 49
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 102 ------------------------------------------
+Time: 79
+Id to remove: 20
+Id to remove: 23
+Id to remove: 38
+Id to remove: 39
+Id to remove: 40
+Id to remove: 45
+Id to remove: 47
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 51
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 103 ------------------------------------------
+Time: 84
+Id to remove: 23
+Id to remove: 38
+Id to remove: 39
+Id to remove: 40
+Id to remove: 49
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 52
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 104 ------------------------------------------
+Time: 80
+Id to remove: 48
+Id to remove: 49
+Id to remove: 51
+Id to remove: 20
+Id to remove: 45
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 55
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 105 ------------------------------------------
+Time: 83
+Id to remove: 48
+Id to remove: 50
+Id to remove: 51
+Id to remove: 20
+Id to remove: 47
+Id to remove: 45
+Id to remove: 52
+Id to remove: 54
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 59
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 106 ------------------------------------------
+Time: 78
+Id to remove: 50
+Id to remove: 47
+Id to remove: 52
+Id to remove: 54
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 59
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 107 ------------------------------------------
+Time: 83
+Id to remove: 36
+Id to remove: 41
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 61
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 108 ------------------------------------------
+Time: 76
+Id to remove: 36
+Id to remove: 42
+Id to remove: 41
+Id to remove: 59
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 61
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 109 ------------------------------------------
+Time: 81
+Id to remove: 42
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 65
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 110 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 65
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 111 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 65
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 112 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 17
+Size of helper.getBlobs: 67
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 113 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 68
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 114 ------------------------------------------
+Time: 80
+Id to remove: 65
+Id to remove: 67
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 16
+Size of helper.getBlobs: 68
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 115 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 68
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 116 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 68
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 117 ------------------------------------------
+Time: 90
+Id to remove: 67
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 17
+Size of helper.getBlobs: 68
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 118 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 69
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 119 ------------------------------------------
+Time: 84
+Id to remove: 68
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 70
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 120 ------------------------------------------
+Time: 81
+Id to remove: 68
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 70
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 121 ------------------------------------------
+Time: 82
+Id to remove: 69
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 70
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 122 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 20
+Size of helper.getBlobs: 71
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 123 ------------------------------------------
+Time: 81
+Id to remove: 69
+Id to remove: 70
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 71
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 124 ------------------------------------------
+Time: 79
+Id to remove: 30
+Id to remove: 32
+Id to remove: 65
+Id to remove: 67
+Id to remove: 70
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 16
+Size of helper.getBlobs: 72
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 125 ------------------------------------------
+Time: 86
+Id to remove: 30
+Id to remove: 60
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 72
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 126 ------------------------------------------
+Time: 77
+Id to remove: 60
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 73
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 127 ------------------------------------------
+Time: 85
+Id to remove: 59
+Id to remove: 69
+Id to remove: 67
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 16
+Size of helper.getBlobs: 73
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 128 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 73
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 129 ------------------------------------------
+Time: 84
+Id to remove: 67
+Id to remove: 69
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 74
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 130 ------------------------------------------
+Time: 83
+Id to remove: 63
+Id to remove: 73
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 74
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 131 ------------------------------------------
+Time: 83
+Id to remove: 53
+Id to remove: 55
+Id to remove: 56
+Id to remove: 57
+Id to remove: 63
+Id to remove: 66
+Id to remove: 59
+Id to remove: 73
+Id to remove: 69
+Size of helper.get_last_tracked: 20
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 78
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 132 ------------------------------------------
+Time: 80
+Id to remove: 53
+Id to remove: 55
+Id to remove: 56
+Id to remove: 57
+Id to remove: 58
+Id to remove: 75
+Id to remove: 76
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 81
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 133 ------------------------------------------
+Time: 86
+Id to remove: 58
+Id to remove: 75
+Id to remove: 76
+Size of helper.get_last_tracked: 21
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 81
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 134 ------------------------------------------
+Time: 84
+Id to remove: 67
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 82
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 135 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 82
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 136 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 22
+Size of helper.getBlobs: 85
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 137 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 86
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 138 ------------------------------------------
+Time: 84
+Id to remove: 66
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 22
+Size of helper.getBlobs: 86
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 139 ------------------------------------------
+Time: 83
+Id to remove: 66
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 87
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 140 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 87
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 141 ------------------------------------------
+Time: 85
+Id to remove: 86
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 142 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 24
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 143 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 24
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 144 ------------------------------------------
+Time: 84
+Id to remove: 86
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 145 ------------------------------------------
+Time: 83
+Id to remove: 82
+Id to remove: 85
+Id to remove: 86
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 21
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 146 ------------------------------------------
+Time: 81
+Id to remove: 82
+Id to remove: 85
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 21
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 147 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 21
+Size of helper.get_current_tracked: 21
+Size of helper.getBlobs: 88
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 148 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 21
+Size of helper.get_current_tracked: 22
+Size of helper.getBlobs: 89
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 149 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 22
+Size of helper.getBlobs: 89
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 150 ------------------------------------------
+Time: 82
+Id to remove: 88
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 21
+Size of helper.getBlobs: 89
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 151 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 22
+Size of helper.getBlobs: 89
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 152 ------------------------------------------
+Time: 80
+Id to remove: 61
+Id to remove: 64
+Id to remove: 59
+Id to remove: 81
+Id to remove: 84
+Id to remove: 88
+Size of helper.get_last_tracked: 22
+Size of helper.get_current_tracked: 17
+Size of helper.getBlobs: 90
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 153 ------------------------------------------
+Time: 82
+Id to remove: 61
+Id to remove: 62
+Id to remove: 64
+Id to remove: 59
+Id to remove: 81
+Id to remove: 83
+Id to remove: 84
+Id to remove: 88
+Id to remove: 89
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 20
+Size of helper.getBlobs: 96
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 154 ------------------------------------------
+Time: 87
+Id to remove: 62
+Id to remove: 83
+Id to remove: 89
+Id to remove: 95
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 20
+Size of helper.getBlobs: 97
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 155 ------------------------------------------
+Time: 85
+Size of helper.get_last_tracked: 21
+Size of helper.get_current_tracked: 24
+Size of helper.getBlobs: 100
+Size of server.getTuioCursors: 18
+---------------------- End of Frame 156 ------------------------------------------
+Time: 83
+Id to remove: 99
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 100
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 157 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 24
+Size of helper.get_current_tracked: 25
+Size of helper.getBlobs: 101
+Size of server.getTuioCursors: 18
+---------------------- End of Frame 158 ------------------------------------------
+Time: 88
+Id to remove: 77
+Id to remove: 79
+Size of helper.get_last_tracked: 25
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 101
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 159 ------------------------------------------
+Time: 84
+Id to remove: 77
+Size of helper.get_last_tracked: 25
+Size of helper.get_current_tracked: 25
+Size of helper.getBlobs: 102
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 160 ------------------------------------------
+Time: 86
+Id to remove: 74
+Id to remove: 101
+Id to remove: 79
+Size of helper.get_last_tracked: 25
+Size of helper.get_current_tracked: 23
+Size of helper.getBlobs: 103
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 161 ------------------------------------------
+Time: 83
+Id to remove: 74
+Id to remove: 78
+Id to remove: 80
+Id to remove: 90
+Id to remove: 91
+Id to remove: 97
+Id to remove: 101
+Id to remove: 79
+Size of helper.get_last_tracked: 26
+Size of helper.get_current_tracked: 18
+Size of helper.getBlobs: 103
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 162 ------------------------------------------
+Time: 83
+Id to remove: 33
+Id to remove: 31
+Id to remove: 32
+Id to remove: 72
+Id to remove: 78
+Id to remove: 80
+Id to remove: 90
+Id to remove: 91
+Id to remove: 97
+Id to remove: 100
+Id to remove: 99
+Id to remove: 102
+Size of helper.get_last_tracked: 23
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 103
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 163 ------------------------------------------
+Time: 79
+Id to remove: 33
+Id to remove: 31
+Id to remove: 32
+Id to remove: 72
+Id to remove: 100
+Id to remove: 99
+Id to remove: 102
+Size of helper.get_last_tracked: 18
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 105
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 164 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 105
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 165 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 166 ------------------------------------------
+Time: 81
+Id to remove: 105
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 167 ------------------------------------------
+Time: 80
+Id to remove: 105
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 168 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 169 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 170 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 106
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 171 ------------------------------------------
+Time: 81
+Id to remove: 104
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 107
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 172 ------------------------------------------
+Time: 83
+Id to remove: 103
+Id to remove: 104
+Id to remove: 106
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 108
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 173 ------------------------------------------
+Time: 82
+Id to remove: 103
+Id to remove: 106
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 109
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 174 ------------------------------------------
+Time: 80
+Id to remove: 87
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 109
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 175 ------------------------------------------
+Time: 80
+Id to remove: 69
+Id to remove: 87
+Id to remove: 95
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 109
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 176 ------------------------------------------
+Time: 82
+Id to remove: 69
+Id to remove: 92
+Id to remove: 93
+Id to remove: 95
+Id to remove: 108
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 109
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 177 ------------------------------------------
+Time: 81
+Id to remove: 92
+Id to remove: 93
+Id to remove: 107
+Id to remove: 108
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 111
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 178 ------------------------------------------
+Time: 84
+Id to remove: 65
+Id to remove: 67
+Id to remove: 94
+Id to remove: 96
+Id to remove: 107
+Id to remove: 109
+Id to remove: 110
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 113
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 179 ------------------------------------------
+Time: 78
+Id to remove: 65
+Id to remove: 67
+Id to remove: 94
+Id to remove: 96
+Id to remove: 109
+Id to remove: 110
+Id to remove: 111
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 114
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 180 ------------------------------------------
+Time: 80
+Id to remove: 111
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 114
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 181 ------------------------------------------
+Time: 77
+Id to remove: 112
+Id to remove: 113
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 119
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 182 ------------------------------------------
+Time: 80
+Id to remove: 112
+Id to remove: 113
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 119
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 183 ------------------------------------------
+Time: 76
+Id to remove: 114
+Id to remove: 115
+Id to remove: 116
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 121
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 184 ------------------------------------------
+Time: 80
+Id to remove: 114
+Id to remove: 115
+Id to remove: 116
+Id to remove: 119
+Id to remove: 120
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 123
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 185 ------------------------------------------
+Time: 80
+Id to remove: 117
+Id to remove: 118
+Id to remove: 119
+Id to remove: 120
+Id to remove: 121
+Id to remove: 122
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 125
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 186 ------------------------------------------
+Time: 81
+Id to remove: 117
+Id to remove: 118
+Id to remove: 121
+Id to remove: 122
+Id to remove: 124
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 125
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 187 ------------------------------------------
+Time: 80
+Id to remove: 124
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 126
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 188 ------------------------------------------
+Time: 81
+Id to remove: 71
+Id to remove: 123
+Id to remove: 125
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 127
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 189 ------------------------------------------
+Time: 79
+Id to remove: 71
+Id to remove: 123
+Id to remove: 125
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 130
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 190 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 140
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 191 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 17
+Size of helper.getBlobs: 142
+Size of server.getTuioCursors: 17
+---------------------- End of Frame 192 ------------------------------------------
+Time: 85
+Id to remove: 140
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 16
+Size of helper.getBlobs: 142
+Size of server.getTuioCursors: 16
+---------------------- End of Frame 193 ------------------------------------------
+Time: 84
+Id to remove: 129
+Id to remove: 140
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 142
+Size of server.getTuioCursors: 15
+---------------------- End of Frame 194 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 19
+Size of helper.getBlobs: 145
+Size of server.getTuioCursors: 18
+---------------------- End of Frame 195 ------------------------------------------
+Time: 82
+Id to remove: 98
+Id to remove: 130
+Id to remove: 133
+Id to remove: 134
+Id to remove: 135
+Id to remove: 141
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 145
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 196 ------------------------------------------
+Time: 83
+Id to remove: 98
+Id to remove: 133
+Id to remove: 134
+Id to remove: 135
+Id to remove: 138
+Id to remove: 141
+Size of helper.get_last_tracked: 19
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 147
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 197 ------------------------------------------
+Time: 82
+Id to remove: 136
+Id to remove: 137
+Id to remove: 138
+Id to remove: 139
+Id to remove: 130
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 148
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 198 ------------------------------------------
+Time: 80
+Id to remove: 136
+Id to remove: 137
+Id to remove: 139
+Id to remove: 130
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 148
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 199 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 148
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 200 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 149
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 201 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 151
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 202 ------------------------------------------
+Time: 81
+Id to remove: 150
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 151
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 203 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 16
+Size of helper.getBlobs: 152
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 204 ------------------------------------------
+Time: 83
+Id to remove: 143
+Id to remove: 129
+Id to remove: 145
+Id to remove: 151
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 153
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 205 ------------------------------------------
+Time: 80
+Id to remove: 131
+Id to remove: 143
+Id to remove: 129
+Id to remove: 151
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 154
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 206 ------------------------------------------
+Time: 82
+Id to remove: 127
+Id to remove: 128
+Id to remove: 131
+Id to remove: 132
+Id to remove: 146
+Id to remove: 149
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 155
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 207 ------------------------------------------
+Time: 82
+Id to remove: 127
+Id to remove: 128
+Id to remove: 132
+Id to remove: 146
+Id to remove: 149
+Id to remove: 152
+Id to remove: 154
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 156
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 208 ------------------------------------------
+Time: 81
+Id to remove: 126
+Id to remove: 152
+Id to remove: 153
+Id to remove: 154
+Id to remove: 155
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 160
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 209 ------------------------------------------
+Time: 78
+Id to remove: 126
+Id to remove: 150
+Id to remove: 145
+Id to remove: 153
+Id to remove: 155
+Id to remove: 157
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 162
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 210 ------------------------------------------
+Time: 81
+Id to remove: 144
+Id to remove: 150
+Id to remove: 145
+Id to remove: 157
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 163
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 211 ------------------------------------------
+Time: 83
+Id to remove: 144
+Id to remove: 162
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 164
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 212 ------------------------------------------
+Time: 79
+Id to remove: 158
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 164
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 213 ------------------------------------------
+Time: 81
+Id to remove: 158
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 165
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 214 ------------------------------------------
+Time: 80
+Id to remove: 163
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 165
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 215 ------------------------------------------
+Time: 82
+Id to remove: 163
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 216 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 217 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 218 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 219 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 220 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 221 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 222 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 223 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 224 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 225 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 226 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 227 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 228 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 229 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 166
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 230 ------------------------------------------
+Time: 83
+Id to remove: 148
+Id to remove: 160
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 231 ------------------------------------------
+Time: 80
+Id to remove: 148
+Id to remove: 160
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 232 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 233 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 234 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 235 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 236 ------------------------------------------
+Time: 82
+Id to remove: 147
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 237 ------------------------------------------
+Time: 80
+Id to remove: 147
+Id to remove: 167
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 238 ------------------------------------------
+Time: 81
+Id to remove: 167
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 239 ------------------------------------------
+Time: 81
+Id to remove: 166
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 240 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 241 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 242 ------------------------------------------
+Time: 81
+Id to remove: 159
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 243 ------------------------------------------
+Time: 81
+Id to remove: 166
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 168
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 244 ------------------------------------------
+Time: 83
+Id to remove: 161
+Id to remove: 159
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 169
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 245 ------------------------------------------
+Time: 80
+Id to remove: 156
+Id to remove: 159
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 169
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 246 ------------------------------------------
+Time: 81
+Id to remove: 168
+Id to remove: 161
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 169
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 247 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 169
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 248 ------------------------------------------
+Time: 81
+Id to remove: 168
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 169
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 249 ------------------------------------------
+Time: 82
+Id to remove: 168
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 170
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 250 ------------------------------------------
+Time: 81
+Id to remove: 161
+Id to remove: 169
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 171
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 251 ------------------------------------------
+Time: 81
+Id to remove: 166
+Id to remove: 156
+Id to remove: 161
+Id to remove: 169
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 172
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 252 ------------------------------------------
+Time: 82
+Id to remove: 166
+Id to remove: 156
+Id to remove: 170
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 173
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 253 ------------------------------------------
+Time: 80
+Id to remove: 170
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 174
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 254 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 175
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 255 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 175
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 256 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 175
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 257 ------------------------------------------
+Time: 78
+Id to remove: 165
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 177
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 258 ------------------------------------------
+Time: 81
+Id to remove: 175
+Id to remove: 176
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 177
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 259 ------------------------------------------
+Time: 81
+Id to remove: 175
+Id to remove: 176
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 178
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 260 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 261 ------------------------------------------
+Time: 83
+Id to remove: 177
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 262 ------------------------------------------
+Time: 81
+Id to remove: 178
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 263 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 264 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 265 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 266 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 267 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 268 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 269 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 270 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 271 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 272 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 273 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 274 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 275 ------------------------------------------
+Time: 79
+Id to remove: 142
+Id to remove: 162
+Id to remove: 164
+Id to remove: 165
+Id to remove: 177
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 276 ------------------------------------------
+Time: 79
+Id to remove: 142
+Id to remove: 162
+Id to remove: 164
+Id to remove: 165
+Id to remove: 177
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 277 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 179
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 278 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 183
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 279 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 184
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 280 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 184
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 281 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 184
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 282 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 185
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 283 ------------------------------------------
+Time: 82
+Id to remove: 174
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 189
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 284 ------------------------------------------
+Time: 82
+Id to remove: 174
+Id to remove: 178
+Id to remove: 181
+Id to remove: 187
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 192
+Size of server.getTuioCursors: 14
+---------------------- End of Frame 285 ------------------------------------------
+Time: 82
+Id to remove: 171
+Id to remove: 178
+Id to remove: 179
+Id to remove: 180
+Id to remove: 181
+Id to remove: 182
+Id to remove: 183
+Id to remove: 187
+Size of helper.get_last_tracked: 17
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 193
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 286 ------------------------------------------
+Time: 83
+Id to remove: 171
+Id to remove: 179
+Id to remove: 180
+Id to remove: 182
+Id to remove: 183
+Id to remove: 190
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 194
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 287 ------------------------------------------
+Time: 84
+Id to remove: 189
+Id to remove: 192
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 199
+Size of server.getTuioCursors: 13
+---------------------- End of Frame 288 ------------------------------------------
+Time: 86
+Id to remove: 186
+Id to remove: 188
+Id to remove: 189
+Id to remove: 191
+Id to remove: 192
+Size of helper.get_last_tracked: 16
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 199
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 289 ------------------------------------------
+Time: 82
+Id to remove: 184
+Id to remove: 185
+Id to remove: 186
+Id to remove: 188
+Id to remove: 191
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 199
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 290 ------------------------------------------
+Time: 82
+Id to remove: 184
+Id to remove: 185
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 200
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 291 ------------------------------------------
+Time: 81
+Id to remove: 194
+Id to remove: 190
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 200
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 292 ------------------------------------------
+Time: 80
+Id to remove: 194
+Id to remove: 190
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 201
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 293 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 294 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 295 ------------------------------------------
+Time: 89
+Id to remove: 197
+Id to remove: 198
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 296 ------------------------------------------
+Time: 79
+Id to remove: 195
+Id to remove: 196
+Id to remove: 197
+Id to remove: 198
+Id to remove: 201
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 297 ------------------------------------------
+Time: 81
+Id to remove: 195
+Id to remove: 196
+Id to remove: 201
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 298 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 299 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 202
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 300 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 203
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 301 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 206
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 302 ------------------------------------------
+Time: 83
+Id to remove: 173
+Id to remove: 202
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 209
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 303 ------------------------------------------
+Time: 78
+Id to remove: 202
+Id to remove: 203
+Id to remove: 204
+Id to remove: 207
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 209
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 304 ------------------------------------------
+Time: 79
+Id to remove: 203
+Id to remove: 204
+Id to remove: 205
+Id to remove: 206
+Id to remove: 207
+Id to remove: 208
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 211
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 305 ------------------------------------------
+Time: 85
+Id to remove: 205
+Id to remove: 206
+Id to remove: 208
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 213
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 306 ------------------------------------------
+Time: 83
+Id to remove: 209
+Id to remove: 210
+Id to remove: 212
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 215
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 307 ------------------------------------------
+Time: 79
+Id to remove: 211
+Id to remove: 212
+Id to remove: 213
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 216
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 308 ------------------------------------------
+Time: 81
+Id to remove: 211
+Id to remove: 213
+Id to remove: 214
+Id to remove: 215
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 217
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 309 ------------------------------------------
+Time: 82
+Id to remove: 209
+Id to remove: 210
+Id to remove: 215
+Id to remove: 216
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 219
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 310 ------------------------------------------
+Time: 81
+Id to remove: 210
+Id to remove: 216
+Id to remove: 218
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 220
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 311 ------------------------------------------
+Time: 80
+Id to remove: 217
+Id to remove: 214
+Id to remove: 209
+Id to remove: 219
+Size of helper.get_last_tracked: 10
+Size of helper.get_current_tracked: 7
+Size of helper.getBlobs: 221
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 312 ------------------------------------------
+Time: 80
+Id to remove: 172
+Id to remove: 193
+Id to remove: 199
+Id to remove: 200
+Id to remove: 214
+Id to remove: 219
+Id to remove: 218
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 221
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 313 ------------------------------------------
+Time: 78
+Id to remove: 172
+Id to remove: 193
+Id to remove: 199
+Id to remove: 200
+Id to remove: 218
+Id to remove: 220
+Id to remove: 209
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 223
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 314 ------------------------------------------
+Time: 78
+Id to remove: 209
+Id to remove: 217
+Id to remove: 221
+Id to remove: 222
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 224
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 315 ------------------------------------------
+Time: 78
+Id to remove: 173
+Id to remove: 217
+Id to remove: 221
+Id to remove: 222
+Id to remove: 223
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 227
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 316 ------------------------------------------
+Time: 81
+Id to remove: 173
+Id to remove: 220
+Size of helper.get_last_tracked: 6
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 231
+Size of server.getTuioCursors: 7
+---------------------- End of Frame 317 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 234
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 318 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 235
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 319 ------------------------------------------
+Time: 80
+Id to remove: 225
+Id to remove: 226
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 237
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 320 ------------------------------------------
+Time: 84
+Id to remove: 225
+Id to remove: 226
+Id to remove: 227
+Id to remove: 233
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 237
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 321 ------------------------------------------
+Time: 79
+Id to remove: 233
+Id to remove: 234
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 237
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 322 ------------------------------------------
+Time: 82
+Id to remove: 234
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 237
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 323 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 238
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 324 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 239
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 325 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 240
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 326 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 240
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 327 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 14
+Size of helper.getBlobs: 240
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 328 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 15
+Size of helper.getBlobs: 241
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 329 ------------------------------------------
+Time: 80
+Id to remove: 236
+Id to remove: 237
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 13
+Size of helper.getBlobs: 241
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 330 ------------------------------------------
+Time: 83
+Id to remove: 236
+Id to remove: 237
+Id to remove: 238
+Id to remove: 239
+Size of helper.get_last_tracked: 15
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 241
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 331 ------------------------------------------
+Time: 79
+Id to remove: 238
+Id to remove: 239
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 242
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 332 ------------------------------------------
+Time: 84
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 242
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 333 ------------------------------------------
+Time: 80
+Id to remove: 240
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 242
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 334 ------------------------------------------
+Time: 82
+Id to remove: 240
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 242
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 335 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 243
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 336 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 243
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 337 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 243
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 338 ------------------------------------------
+Time: 183
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 243
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 339 ------------------------------------------
+Time: 83
+Id to remove: 224
+Id to remove: 228
+Id to remove: 223
+Id to remove: 229
+Id to remove: 230
+Id to remove: 231
+Id to remove: 220
+Id to remove: 232
+Id to remove: 235
+Id to remove: 227
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 244
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 340 ------------------------------------------
+Time: 79
+Id to remove: 224
+Id to remove: 228
+Id to remove: 223
+Id to remove: 229
+Id to remove: 230
+Id to remove: 231
+Id to remove: 220
+Id to remove: 232
+Id to remove: 235
+Id to remove: 227
+Size of helper.get_last_tracked: 13
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 244
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 341 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 244
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 342 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 8
+Size of helper.getBlobs: 249
+Size of server.getTuioCursors: 8
+---------------------- End of Frame 343 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 8
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 253
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 344 ------------------------------------------
+Time: 81
+Id to remove: 249
+Id to remove: 252
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 253
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 345 ------------------------------------------
+Time: 83
+Id to remove: 249
+Id to remove: 251
+Id to remove: 252
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 11
+Size of helper.getBlobs: 255
+Size of server.getTuioCursors: 11
+---------------------- End of Frame 346 ------------------------------------------
+Time: 80
+Id to remove: 251
+Id to remove: 253
+Id to remove: 254
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 12
+Size of helper.getBlobs: 258
+Size of server.getTuioCursors: 12
+---------------------- End of Frame 347 ------------------------------------------
+Time: 83
+Id to remove: 253
+Id to remove: 254
+Id to remove: 255
+Id to remove: 257
+Size of helper.get_last_tracked: 14
+Size of helper.get_current_tracked: 10
+Size of helper.getBlobs: 258
+Size of server.getTuioCursors: 10
+---------------------- End of Frame 348 ------------------------------------------
+Time: 82
+Id to remove: 242
+Id to remove: 243
+Id to remove: 255
+Id to remove: 257
+Size of helper.get_last_tracked: 12
+Size of helper.get_current_tracked: 9
+Size of helper.getBlobs: 259
+Size of server.getTuioCursors: 9
+---------------------- End of Frame 349 ------------------------------------------
+Time: 80
+Id to remove: 242
+Id to remove: 243
+Id to remove: 244
+Id to remove: 250
+Id to remove: 258
+Size of helper.get_last_tracked: 11
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 259
+Size of server.getTuioCursors: 6
+---------------------- End of Frame 350 ------------------------------------------
+Time: 82
+Id to remove: 241
+Id to remove: 250
+Id to remove: 258
+Size of helper.get_last_tracked: 9
+Size of helper.get_current_tracked: 6
+Size of helper.getBlobs: 259
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 351 ------------------------------------------
+Time: 82
+Id to remove: 241
+Id to remove: 245
+Id to remove: 246
+Id to remove: 247
+Id to remove: 248
+Id to remove: 244
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 260
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 352 ------------------------------------------
+Time: 78
+Id to remove: 245
+Id to remove: 246
+Id to remove: 247
+Id to remove: 248
+Id to remove: 244
+Size of helper.get_last_tracked: 7
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 260
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 353 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 261
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 354 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 4
+Size of helper.getBlobs: 262
+Size of server.getTuioCursors: 4
+---------------------- End of Frame 355 ------------------------------------------
+Time: 79
+Id to remove: 259
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 262
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 356 ------------------------------------------
+Time: 80
+Id to remove: 256
+Id to remove: 259
+Id to remove: 260
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 1
+Size of helper.getBlobs: 262
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 357 ------------------------------------------
+Time: 79
+Id to remove: 256
+Id to remove: 260
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 263
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 358 ------------------------------------------
+Time: 81
+Id to remove: 261
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 1
+Size of helper.getBlobs: 263
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 359 ------------------------------------------
+Time: 78
+Id to remove: 261
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 265
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 360 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 361 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 362 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 363 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 364 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 5
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 5
+---------------------- End of Frame 365 ------------------------------------------
+Time: 82
+Id to remove: 262
+Id to remove: 263
+Id to remove: 264
+Id to remove: 265
+Id to remove: 266
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 366 ------------------------------------------
+Time: 81
+Id to remove: 262
+Id to remove: 263
+Id to remove: 264
+Id to remove: 265
+Id to remove: 266
+Size of helper.get_last_tracked: 5
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 267
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 367 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 0
+Size of helper.get_current_tracked: 1
+Size of helper.getBlobs: 268
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 368 ------------------------------------------
+Time: 81
+Id to remove: 267
+Size of helper.get_last_tracked: 1
+Size of helper.get_current_tracked: 0
+Size of helper.getBlobs: 268
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 369 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 1
+Size of helper.get_current_tracked: 1
+Size of helper.getBlobs: 268
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 370 ------------------------------------------
+Time: 171
+Size of helper.get_last_tracked: 1
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 270
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 371 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 270
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 372 ------------------------------------------
+Time: 78
+Id to remove: 267
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 3
+---------------------- End of Frame 373 ------------------------------------------
+Time: 82
+Id to remove: 270
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 374 ------------------------------------------
+Time: 80
+Id to remove: 270
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 375 ------------------------------------------
+Time: 83
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 376 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 377 ------------------------------------------
+Time: 76
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 378 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 379 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 380 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 381 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 382 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 383 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 384 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 385 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 386 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 387 ------------------------------------------
+Time: 77
+Id to remove: 268
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 388 ------------------------------------------
+Time: 80
+Id to remove: 268
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 389 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 390 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 391 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 392 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 393 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 394 ------------------------------------------
+Time: 82
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 271
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 395 ------------------------------------------
+Time: 78
+Id to remove: 269
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 272
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 396 ------------------------------------------
+Time: 81
+Id to remove: 269
+Id to remove: 271
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 273
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 397 ------------------------------------------
+Time: 81
+Id to remove: 271
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 273
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 398 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 273
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 399 ------------------------------------------
+Time: 78
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 274
+Size of server.getTuioCursors: 2
+---------------------- End of Frame 400 ------------------------------------------
+Time: 79
+Id to remove: 272
+Id to remove: 273
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 1
+---------------------- End of Frame 401 ------------------------------------------
+Time: 79
+Id to remove: 274
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 3
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 402 ------------------------------------------
+Time: 81
+Id to remove: 274
+Id to remove: 273
+Size of helper.get_last_tracked: 4
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 403 ------------------------------------------
+Time: 126
+Id to remove: 273
+Size of helper.get_last_tracked: 3
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 404 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 405 ------------------------------------------
+Time: 77
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 406 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 407 ------------------------------------------
+Time: 80
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 408 ------------------------------------------
+Time: 79
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 409 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 410 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 411 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 412 ------------------------------------------
+Time: 81
+Size of helper.get_last_tracked: 2
+Size of helper.get_current_tracked: 2
+Size of helper.getBlobs: 275
+Size of server.getTuioCursors: 0
+---------------------- End of Frame 413 ------------------------------------------
+Time: 82
+TERMINATION: Camerastream stopped or last frame of video reached.
+SUCCESS: Program terminated like expected.
+unique id: 275
