@@ -247,3 +247,32 @@ void Helper::add_blob(TUIO::TuioCursor* tc)
 	tuioBlobs.push_back(tc);
 }
 
+void Helper::handle_blobs_deletion(TUIO::TuioServer* server)
+{
+	std::list<TUIO::TuioCursor*> serverTuioBlobs;
+	serverTuioBlobs = server->getTuioCursors();
+
+	tuioBlobsIter = tuioBlobs.begin();
+
+	for(; tuioBlobsIter != tuioBlobs.end(); )
+	{
+		bool live = false;
+		for(auto& node : current_frame_tracked)
+		{
+			if( (*tuioBlobsIter)->getCursorID() == node.get()->id )
+			{
+				live = true;
+			}
+		}
+		
+		if(!live)
+		{
+			server->removeExternalTuioCursor((*tuioBlobsIter));
+			tuioBlobsIter = tuioBlobs.erase(tuioBlobsIter);
+		}
+		else
+		{
+			++tuioBlobsIter;
+		}
+	}
+}

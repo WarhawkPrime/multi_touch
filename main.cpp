@@ -201,14 +201,11 @@ int main(void)
 						{
 							if(blob->getCursorID() == calc_id)
 							{
-								//calculation of velocity and acc
-								
-
 								blob->update(rec.center.x, rec.center.y, 
 									helper.calc_x_velocity(blob->getX(), rec.center.x),
 									helper.calc_y_velocity(blob->getY(), rec.center.y),
 									1);
-								//server->updateExternalTuioCursor(blob);
+								
 								server->updateTuioCursor(blob, rec.center.x, rec.center.y);
 								blob_found = true;
 							}
@@ -228,40 +225,17 @@ int main(void)
 						server->addExternalTuioCursor(tcur);
 						helper.add_blob(tcur);
 					}
+					
 
-					//ids aussortieren: compare current and last frame, take difference
 
 
-					/*
-					if(!helper.get_blobs().empty()) {
-
-						for(auto blob : helper.get_blobs())
-						{
-							if(blob->getCursorID() == calc_id)
-							{
-								//server->updateTuioCursor(blob, rec.center.x, rec.center.y);
-								server->addExternalTuioCursor(tcur);
-							}
-							else
-							{
-								helper.add_blob(tcur);
-								server->addExternalTuioCursor(tcur);
-							}
-						}
-					}
-					else
-					{
-						helper.add_blob(tcur);
-						server->addExternalTuioCursor(tcur);
-					}
-					*/
 				}
 
 			}
 		}
 
+		helper.handle_blobs_deletion(server);
 		server->commitFrame();
-
 		helper.overwright();
 		//--------------------------
 		//	end
@@ -280,7 +254,7 @@ int main(void)
 		ms_end = clock();
 		ms_time = ms_end - ms_start;
 		helper.set_delta_t(ms_time);
-		std::cout << "Time: " << ms_time << std::endl;
+		//std::cout << "Time: " << ms_time << std::endl;
 
 		//imshow("window", original); // render the frame to a window
 		cv::imshow("window", original); // render the frame to a window
@@ -290,8 +264,6 @@ int main(void)
 
 		//putText(original, "frame #" + (std::string)_itoa(currentFrame, buffer, 10), cv::Point(0, 15), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write framecounter to the image (useful for debugging)
 		//putText(original, "time per frame: " + (std::string)_itoa(ms_time, buffer, 10) + "ms", cv::Point(0, 30), cv::FONT_HERSHEY_PLAIN, 1, CV_RGB(255, 255, 255), 1, 8); // write calculation time per frame to the image
-	
-	
 
 	} 
 

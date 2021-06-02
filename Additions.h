@@ -69,7 +69,9 @@ public:
 	void set_width(double width) {this->vwidth = width;}
 
 	void add_blob(TUIO::TuioCursor* tc);
-	std::vector<TUIO::TuioCursor*> get_blobs() {return tuioBlobs;};
+	std::list<TUIO::TuioCursor*> get_blobs() {return tuioBlobs;};
+
+	std::list<TUIO::TuioCursor*>::iterator get_blob_it(){return tuioBlobsIter;}
 
 	clock_t get_delta_t() {return delta_t;}
 	void set_delta_t(clock_t delta_t) {this->delta_t = delta_t;}
@@ -78,6 +80,8 @@ public:
 	void increment_unique_id(){ unique_id++;}
 	int get_unique_id() const {return unique_id;}
 
+	//handle blobs
+	void handle_blobs_deletion(TUIO::TuioServer *server);
 	
 
 private:
@@ -86,12 +90,13 @@ private:
 	std::vector<std::shared_ptr<Node>>::iterator l_frame_it;
 
 	std::vector<std::shared_ptr<Node>> current_frame_tracked;
+	std::vector<std::shared_ptr<Node>>::iterator c_frame_it;
 	
 	double vhight;
 	double vwidth;
 	
-	std::vector<TUIO::TuioCursor*> tuioBlobs;
-	std::vector<TUIO::TuioCursor*>::iterator tuioBlobsIter;
+	std::list<TUIO::TuioCursor*> tuioBlobs;
+	std::list<TUIO::TuioCursor*>::iterator tuioBlobsIter;
 
 	int unique_id = 0;
 	
