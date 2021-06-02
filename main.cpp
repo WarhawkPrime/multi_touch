@@ -70,13 +70,6 @@ int main(void)
 
 	cv::Mat background;
 
-	
-	
-
-	
-
-	
-
 	//========== Beginning of single Frame ==========
 	for(;;)
 	{
