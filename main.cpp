@@ -33,8 +33,8 @@ int main(void)
 {
 
 	// Redirect all std::cout and std::err output to files
-	freopen("std_cout_output.txt", "w", stdout);
-	freopen("std_err_output.txt", "w", stderr);
+	//freopen("std_cout_output.txt", "w", stdout);
+	//freopen("std_err_output.txt", "w", stderr);
 
 	//creation of a helper object
 	Helper helper;

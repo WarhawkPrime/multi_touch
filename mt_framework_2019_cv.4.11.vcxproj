@@ -77,10 +77,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>..\TUIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;C:\Users\Henrik\source\repos\multi_touch\TUIO;C:\Users\Henrik\source\repos\multi_touch\oscpack;..\oscpack;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
