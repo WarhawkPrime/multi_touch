@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mt_tuio_client.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tuio_client.cpp">
+    <ClCompile Include="client_app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tuio_client.h">
+    <ClInclude Include="client_app.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

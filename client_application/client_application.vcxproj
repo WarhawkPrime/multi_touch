@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{28e5f407-facf-4c35-b56a-05ffac75931a}</ProjectGuid>
-    <RootNamespace>mttuioclient</RootNamespace>
+    <ProjectGuid>{954b0620-a42c-463e-af7c-40dcdeca8a81}</ProjectGuid>
+    <RootNamespace>clientapplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -86,14 +86,14 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;C:\Users\Henrik\source\repos\multi_touch\TUIO;C:\Users\Henrik\source\repos\multi_touch\oscpack;..\TUIO;..\oscpack;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\include;C:\Users\Henrik\source\repos\multi_touch\oscpack;C:\Users\Henrik\source\repos\multi_touch\TUIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,15 +116,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;C:\Users\Henrik\source\repos\multi_touch\TUIO;C:\Users\Henrik\source\repos\multi_touch\oscpack;..\TUIO;..\oscpack;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\oscpack;C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\include;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;C:\sdk\opencv\build\x64\vc15\lib;D:\Documents\Uni\SS2021\construction of multi touch mutli user interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\lib\x64;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world411.lib;opencv_world411d.lib;SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -144,11 +144,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="mt_tuio_client.cpp" />
-    <ClCompile Include="tuio_client.cpp" />
+    <ClCompile Include="client_app.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tuio_client.h" />
+    <ClInclude Include="client_app.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
