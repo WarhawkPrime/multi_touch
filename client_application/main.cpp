@@ -7,11 +7,10 @@
 
 int main(int argc, char* argv[]) {
 
-
-	clientApp* app = new clientApp(3333);
+	int port = 3333;
+	clientApp* app = new clientApp(port);
 	
-	int a; 
-	std::cin >> a;
+	app->run();
 
 	delete app;
 

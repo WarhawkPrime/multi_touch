@@ -118,13 +118,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\windows\sdl\include;C:\Users\Henrik\source\repos\multi_touch\include\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\oscpack;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\freetype;C:\Users\Henrik\source\repos\multi_touch\include\SDL2_ttf-2.0.15\include;C:\Users\Henrik\source\repos\multi_touch\include\windows\sdl\include;C:\Users\Henrik\source\repos\multi_touch\include\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\oscpack;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\lib\x64;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world411.lib;opencv_world411d.lib;SDL2.lib;SDL2main.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\SDL2_ttf-2.0.15\lib\x64;C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\lib\x64;C:\Users\Henrik\source\repos\multi_touch\include\freetype\lib\win64;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world411.lib;opencv_world411d.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;Winmm.lib;Ws2_32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

@@ -3,6 +3,7 @@
 // Includes
 #include <SDL.h>
 #include <SDL_timer.h>
+#include <SDL_ttf.h>
 #include <TuioClient.h>
 #include <TuioListener.h>
 #include <TuioObject.h>
@@ -22,6 +23,33 @@ class clientApp : public TUIO::TuioListener {
 
 public:
 
+	// ClientApp functions 
+	clientApp(unsigned int port);
+	~clientApp();
+	void run();
+
+private:
+
+	
+	// Variables
+	TUIO::TuioClient* client;
+	SDL_Window* window;
+	SDL_Renderer* renderer;
+	SDL_Surface* screen;
+	SDL_Texture* message;
+	SDL_Rect msg_rect;
+	std::string windowTitle;
+	unsigned int scrHeight, scrWidth;
+	bool isRunning;
+
+	// ClientApp functions 
+	void initWindow();
+	void destructWindow();
+	void render();
+	void drawSampleText();
+	void processEvents();
+	
+
 	// TUIO Listener functions
 	void addTuioObject(TUIO::TuioObject* tobj) override;
 	void updateTuioObject(TUIO::TuioObject* tobj) override;
@@ -36,23 +64,4 @@ public:
 	void removeTuioBlob(TUIO::TuioBlob* tblb) override;
 
 	void refresh(TUIO::TuioTime frameTime) override;
-
-	// ClientApp functions 
-	clientApp();
-	clientApp(unsigned int port);
-	~clientApp();
-
-
-
-private:
-
-	void initWindow();
-	void destructWindow();
-
-	// Variables
-	TUIO::TuioClient* client;
-	SDL_Window* window;
-	SDL_Renderer* renderer;
-	std::string windowTitle;
-	unsigned int scrHeight, scrWidth;
 };
