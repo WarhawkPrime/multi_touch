@@ -144,10 +144,68 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\oscpack\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\oscpack\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\oscpack\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\oscpack\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\oscpack\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\oscpack\osc\OscTypes.cpp" />
+    <ClCompile Include="..\TUIO\FlashSender.cpp" />
+    <ClCompile Include="..\TUIO\OneEuroFilter.cpp" />
+    <ClCompile Include="..\TUIO\OscReceiver.cpp" />
+    <ClCompile Include="..\TUIO\TcpReceiver.cpp" />
+    <ClCompile Include="..\TUIO\TcpSender.cpp" />
+    <ClCompile Include="..\TUIO\TuioBlob.cpp" />
+    <ClCompile Include="..\TUIO\TuioClient.cpp" />
+    <ClCompile Include="..\TUIO\TuioContainer.cpp" />
+    <ClCompile Include="..\TUIO\TuioCursor.cpp" />
+    <ClCompile Include="..\TUIO\TuioDispatcher.cpp" />
+    <ClCompile Include="..\TUIO\TuioManager.cpp" />
+    <ClCompile Include="..\TUIO\TuioObject.cpp" />
+    <ClCompile Include="..\TUIO\TuioPoint.cpp" />
+    <ClCompile Include="..\TUIO\TuioServer.cpp" />
+    <ClCompile Include="..\TUIO\TuioTime.cpp" />
+    <ClCompile Include="..\TUIO\UdpReceiver.cpp" />
+    <ClCompile Include="..\TUIO\UdpSender.cpp" />
+    <ClCompile Include="..\TUIO\WebSockSender.cpp" />
     <ClCompile Include="client_app.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\oscpack\ip\IpEndpointName.h" />
+    <ClInclude Include="..\oscpack\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\oscpack\ip\PacketListener.h" />
+    <ClInclude Include="..\oscpack\ip\TimerListener.h" />
+    <ClInclude Include="..\oscpack\ip\UdpSocket.h" />
+    <ClInclude Include="..\oscpack\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\oscpack\osc\OscException.h" />
+    <ClInclude Include="..\oscpack\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\oscpack\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\oscpack\osc\OscPacketListener.h" />
+    <ClInclude Include="..\oscpack\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\oscpack\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\oscpack\osc\OscTypes.h" />
+    <ClInclude Include="..\TUIO\FlashSender.h" />
+    <ClInclude Include="..\TUIO\LibExport.h" />
+    <ClInclude Include="..\TUIO\OneEuroFilter.h" />
+    <ClInclude Include="..\TUIO\OscReceiver.h" />
+    <ClInclude Include="..\TUIO\OscSender.h" />
+    <ClInclude Include="..\TUIO\TcpReceiver.h" />
+    <ClInclude Include="..\TUIO\TcpSender.h" />
+    <ClInclude Include="..\TUIO\TuioBlob.h" />
+    <ClInclude Include="..\TUIO\TuioClient.h" />
+    <ClInclude Include="..\TUIO\TuioContainer.h" />
+    <ClInclude Include="..\TUIO\TuioCursor.h" />
+    <ClInclude Include="..\TUIO\TuioDispatcher.h" />
+    <ClInclude Include="..\TUIO\TuioListener.h" />
+    <ClInclude Include="..\TUIO\TuioManager.h" />
+    <ClInclude Include="..\TUIO\TuioObject.h" />
+    <ClInclude Include="..\TUIO\TuioPoint.h" />
+    <ClInclude Include="..\TUIO\TuioServer.h" />
+    <ClInclude Include="..\TUIO\TuioTime.h" />
+    <ClInclude Include="..\TUIO\UdpReceiver.h" />
+    <ClInclude Include="..\TUIO\UdpSender.h" />
+    <ClInclude Include="..\TUIO\WebSockSender.h" />
     <ClInclude Include="client_app.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
