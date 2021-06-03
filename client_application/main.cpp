@@ -8,7 +8,7 @@
 int main(int argc, char* argv[]) {
 
 
-	//clientApp* app = new clientApp(3333);
+	clientApp* app = new clientApp(3333);
 	
 
 	int a; 

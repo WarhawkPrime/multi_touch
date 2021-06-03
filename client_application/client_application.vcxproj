@@ -116,15 +116,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\oscpack;C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\include;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henrik\source\repos\multi_touch\include\windows\sdl\include;C:\Users\Henrik\source\repos\multi_touch\include\TUIO;C:\Users\Henrik\source\repos\multi_touch\include\oscpack;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\Henrik\source\repos\multi_touch\include\SDL2-2.0.14\lib\x64;C:\Users\Henrik\source\repos\multi_touch\include\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world411.lib;opencv_world411d.lib;SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world411.lib;opencv_world411d.lib;SDL2.lib;SDL2main.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -144,10 +144,61 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\oscpack\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\OscReceiver.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TcpReceiver.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TcpSender.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioBlob.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioContainer.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioCursor.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioDispatcher.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioObject.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioPoint.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\TuioTime.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\UdpReceiver.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\UdpSender.cpp" />
+    <ClCompile Include="..\..\..\External_Libraries\TUIO11_CPP-master\TUIO11_CPP-master\TUIO\WebSockSender.cpp" />
+    <ClCompile Include="..\..\include\TUIO\OneEuroFilter.cpp" />
+    <ClCompile Include="..\..\include\TUIO\TuioClient.cpp" />
     <ClCompile Include="client_app.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\oscpack\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\include\oscpack\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\include\oscpack\ip\PacketListener.h" />
+    <ClInclude Include="..\..\include\oscpack\ip\TimerListener.h" />
+    <ClInclude Include="..\..\include\oscpack\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscException.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\include\oscpack\osc\OscTypes.h" />
+    <ClInclude Include="..\..\include\TUIO\OneEuroFilter.h" />
+    <ClInclude Include="..\..\include\TUIO\OscReceiver.h" />
+    <ClInclude Include="..\..\include\TUIO\OscSender.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioBlob.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioClient.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioContainer.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioCursor.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioDispatcher.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioListener.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioManager.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioObject.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioPoint.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioServer.h" />
+    <ClInclude Include="..\..\include\TUIO\TuioTime.h" />
+    <ClInclude Include="..\..\include\TUIO\UdpReceiver.h" />
+    <ClInclude Include="..\..\include\TUIO\UdpSender.h" />
+    <ClInclude Include="..\..\include\TUIO\WebSockSender.h" />
     <ClInclude Include="client_app.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

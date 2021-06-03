@@ -23,18 +23,19 @@ class clientApp : public TUIO::TuioListener {
 public:
 
 	// TUIO Listener functions
-	void updateTuioObject(TUIO::TuioObject* tobj);
-	void removeTuioObject(TUIO::TuioObject* tobj);
+	void addTuioObject(TUIO::TuioObject* tobj) override;
+	void updateTuioObject(TUIO::TuioObject* tobj) override;
+	void removeTuioObject(TUIO::TuioObject* tobj) override;
 
-	void addTuioCursor(TUIO::TuioCursor* tcur);
-	void updateTuioCursor(TUIO::TuioCursor* tcur);
-	void removeTuioCursor(TUIO::TuioCursor* tcur);
+	void addTuioCursor(TUIO::TuioCursor* tcur) override;
+	void updateTuioCursor(TUIO::TuioCursor* tcur) override;
+	void removeTuioCursor(TUIO::TuioCursor* tcur) override;
 
-	void addTuioBlob(TUIO::TuioBlob* tblb);
-	void updateTuioBlob(TUIO::TuioBlob* tblb);
-	void removeTuioBlob(TUIO::TuioBlob* tblb);
+	void addTuioBlob(TUIO::TuioBlob* tblb) override;
+	void updateTuioBlob(TUIO::TuioBlob* tblb) override;
+	void removeTuioBlob(TUIO::TuioBlob* tblb) override;
 
-	void refresh(TUIO::TuioTime frameTime);
+	void refresh(TUIO::TuioTime frameTime) override;
 
 	// ClientApp functions 
 	clientApp();

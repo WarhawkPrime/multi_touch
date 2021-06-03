@@ -1,6 +1,12 @@
 #include "client_app.h"
 
 
+void clientApp::addTuioObject(TUIO::TuioObject* tobj)
+{
+
+
+}
+
 // Implementing the virtual functions of TUIO Listener
 void clientApp::updateTuioObject(TUIO::TuioObject* tobj)
 {
@@ -53,6 +59,7 @@ clientApp::clientApp()
 {
 	// Create a new TuioClient instance
 	this->client = new TUIO::TuioClient(DEFAULT_PORT);
+	this->client->connect();
 	this->windowTitle = "Tuio Client for Lab 4";
 	this->scrHeight = SCR_HEIGHT;
 	this->scrWidth = SCR_WIDTH;
