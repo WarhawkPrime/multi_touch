@@ -8,6 +8,7 @@
 int main(int argc, char* argv[]) {
 
 	int port = 3333;
+	glutInit(&argc, argv);
 	clientApp* app = new clientApp(port);
 	
 	app->run();

@@ -4,10 +4,12 @@
 #include <SDL.h>
 #include <SDL_timer.h>
 #include <SDL_ttf.h>
+#include <GL/glut.h>
 #include <TuioClient.h>
 #include <TuioListener.h>
 #include <TuioObject.h>
 #include <OscReceiver.h>
+#include <list>
 #include <string>
 #include <iostream>
 
@@ -38,9 +40,11 @@ private:
 	SDL_Surface* screen;
 	SDL_Texture* message;
 	SDL_Rect msg_rect;
+	SDL_GLContext gl_context;
 	std::string windowTitle;
 	unsigned int scrHeight, scrWidth;
 	bool isRunning;
+	bool verbose;
 
 	// ClientApp functions 
 	void initWindow();
@@ -48,6 +52,7 @@ private:
 	void render();
 	void drawSampleText();
 	void processEvents();
+	void drawString(char* str);
 	
 
 	// TUIO Listener functions
